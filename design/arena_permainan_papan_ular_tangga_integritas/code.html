@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KUMBARA - Petualangan Integritas</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","inverse-surface":"#233144","secondary-container":"#fe932c","on-secondary-container":"#663500","on-surface-variant":"#3d4a42","on-error-container":"#93000a","surface-container-low":"#eff4ff","on-secondary-fixed-variant":"#6e3900","surface-dim":"#ccdbf3","on-surface":"#0d1c2e","error":"#ba1a1a","surface-variant":"#d5e3fc","outline-variant":"#bccac0","surface-container-highest":"#d5e3fc","tertiary-fixed":"#cce5ff","on-primary-container":"#f5fff7","on-tertiary-container":"#fdfcff","error-container":"#ffdad6","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-tint":"#006c4a","primary-fixed-dim":"#68dba9","secondary":"#904d00","primary-container":"#00855d","tertiary-container":"#007bb9","on-primary-fixed":"#002114","surface-container":"#e6eeff","on-tertiary-fixed":"#001d31","on-primary":"#ffffff","surface-bright":"#f8f9ff","on-tertiary-fixed-variant":"#004b73","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdcc3","primary":"#006948","surface":"#f8f9ff","outline":"#6d7a72","background":"#f8f9ff","primary-fixed":"#85f8c4","inverse-primary":"#68dba9","tertiary":"#006194","secondary-fixed-dim":"#ffb77d","on-secondary-fixed":"#2f1500","on-background":"#0d1c2e","on-primary-fixed-variant":"#005137","tertiary-fixed-dim":"#93ccff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"1rem","space-xs":"0.25rem",gutter:"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem","margin-desktop":"2rem","space-xl":"2rem","space-2xl":"3rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"800"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["16px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"700"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Kumbara Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV3uc8FLyUHWFn9Q0hFOpPGTsmVNygGCWgqi5veDBmfTJ4NAyP_Xn2vbsL8NvFs5I9YU9Wv8TMrFoEnbpK6AeSw-oJ94usCEaANEEA1hPKYmYWNz5bGYFoFwedpCGs0O8dcnbktMOuC__AE_kN_1ygwwh7lu2n3qlq09hlTX0dgZ2iPFcWod1i00xQZEXck6VTd5sTg0J0Jd23YtN77XvSAXLYRZDDMUyZ7omX2ZrETgeA-LMJKxY3Fw"/><div class="flex flex-col justify-center min-w-0"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">KUMBARA</span><span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Karya @wea_aew</span></div><span class="hidden sm:block font-label-sm text-label-sm text-on-surface-variant truncate">Karakter Utuh Mandiri, Berani, Adil, Rajin, &amp; Amanah</span></div></div><div class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container rounded-full"><button class="px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary text-on-primary transition-all shadow-sm" type="button">SD Kelas 1-3</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SD Kelas 4-6</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMP</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMA Sederajat</button></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="BGM dan SFX Audio" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all font-label-sm text-label-sm shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px] text-primary">volume_up</span><span class="hidden md:inline font-bold">Audio</span></button><button aria-label="Reset Permainan" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-sm text-label-sm shadow-[0_2px_0_#ba1a1a] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px]">restart_alt</span><span class="hidden md:inline font-bold">Reset</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low border-t border-outline-variant/20 shadow-[0_2px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop overflow-x-auto"><nav class="flex items-center gap-space-xs py-2 min-w-max" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-sm rounded-lg"><a aria-current="page" class="px-3 py-1.5 transition-all bg-primary-container text-on-primary-container font-bold shadow-sm rounded-lg" data-path="arena-permainan" href="#">Arena Permainan</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="bank-soal-integritas" href="#">Bank Soal Integritas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="papan-peringkat-&amp;-skor" href="#">Papan Peringkat &amp; Skor</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="aturan-&amp;-nilai-integritas" href="#">Aturan &amp; Nilai Integritas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="evaluasi-&amp;-refleksi" href="#">Evaluasi &amp; Refleksi</a></nav></div></div></header><main class="w-full pt-32 bg-background"><div class="flex flex-col w-full">
+<!-- Top Match Banner & Game Status HUD -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-desktop mb-space-lg">
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<!-- Left: Active Quest & Stage Info -->
+<div class="flex items-center gap-space-md w-full lg:w-auto">
+<div class="w-14 h-14 rounded-full bg-primary-fixed flex items-center justify-center flex-shrink-0 shadow-sm ring-4 ring-primary-fixed-dim/40">
+<span class="material-symbols-outlined text-primary text-3xl font-bold">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-2.5 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+              Tingkat: SD Kelas 4-6
+            </span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+              Misi 03: Kejujuran &amp; Tanggung Jawab
+            </span>
+</div>
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate mt-0.5">
+            Arena Integritas: Ekspedisi 100 Petak Kebajikan
+          </h1>
+</div>
+</div>
+<!-- Center: Active Turn Live Pill -->
+<div class="flex items-center gap-space-sm px-space-md py-space-xs bg-primary-container/10 rounded-full w-full lg:w-auto justify-center">
+<div class="relative flex items-center justify-center">
+<span class="w-3.5 h-3.5 rounded-full bg-primary animate-ping absolute opacity-75"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-primary relative"></span>
+</div>
+<div class="flex items-center gap-1.5 font-label-md text-label-md text-on-surface">
+<span class="text-on-surface-variant">Giliran:</span>
+<span class="font-bold text-primary flex items-center gap-1">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+            Bidak Hijau (Budi Pratama - Manusia)
+          </span>
+</div>
+</div>
+<!-- Right: Action HUD Pills -->
+<div class="flex items-center gap-space-sm w-full lg:w-auto justify-end">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none" id="btn-sound-toggle" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary">music_note</span>
+<span class="hidden sm:inline font-bold">Musik Ria</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-all shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none" id="btn-fullscreen-board" type="button">
+<span class="material-symbols-outlined text-[18px]">zoom_in_map</span>
+<span class="hidden sm:inline font-bold">Fokus</span>
+</button>
+<a class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm hover:bg-tertiary-container hover:text-on-tertiary-container transition-all shadow-[0_2px_0_#93ccff] active:translate-y-0.5 active:shadow-none" href="#riwayat-permainan">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+<span class="font-bold">Log Langkah</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Main Game Arena 2-Column Responsive Layout -->
+<main class="max-w-7xl mx-auto w-full px-margin md:px-margin-desktop mb-space-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- ================= LEFT COLUMN: 100-CELL BOARD (Cols 1-7) ================= -->
+<div class="lg:col-span-7 flex flex-col items-center">
+<!-- Board Container Frame -->
+<div class="w-full bg-surface-container-lowest p-space-sm md:p-space-md rounded-xl shadow-md relative overflow-hidden flex flex-col items-center">
+<!-- Board Header Meta -->
+<div class="w-full flex items-center justify-between pb-space-sm px-1 mb-1">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary inline-block"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase tracking-wider">Papan Integritas Kumbara (1 - 100)</span>
+</div>
+<div class="flex items-center gap-3 font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-bold">
+<span class="material-symbols-outlined text-[16px]">stairs</span> 5 Tangga Kebajikan
+              </span>
+<span class="flex items-center gap-1 text-error font-bold">
+<span class="material-symbols-outlined text-[16px]">pest_control</span> 5 Ular Dilema
+              </span>
+</div>
+</div>
+<!-- Interactive 10x10 Snake & Ladders Grid Canvas -->
+<div class="relative w-full max-w-[680px] aspect-square rounded-lg bg-surface-container-low p-1 sm:p-2 shadow-inner select-none overflow-hidden">
+<!-- SVG Vector Layer: Dynamic Connectors for Ladders and Snakes -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-20" preserveaspectratio="none" viewbox="0 0 1000 1000">
+<defs>
+<lineargradient id="ladderGrad" x1="0%" x2="0%" y1="100%" y2="0%">
+<stop offset="0%" stop-color="#fe932c" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#00855d" stop-opacity="0.95"></stop>
+</lineargradient>
+<lineargradient id="snakeGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#ba1a1a" stop-opacity="0.95"></stop>
+<stop offset="100%" stop-color="#fe932c" stop-opacity="0.85"></stop>
+</lineargradient>
+<filter height="140%" id="glow-ladder" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="2" flood-color="#006948" flood-opacity="0.4" stddeviation="3"></fedropshadow>
+</filter>
+</defs>
+<!-- Tangga 1: Cell 4 (X:350, Y:950) -> Cell 14 (X:650, Y:850) [Mengembalikan Dompet] -->
+<g filter="url(#glow-ladder)" opacity="0.85">
+<line stroke="#fe932c" stroke-linecap="round" stroke-width="14" x1="350" x2="650" y1="950" y2="850"></line>
+<line stroke="#00855d" stroke-linecap="round" stroke-width="14" x1="370" x2="670" y1="930" y2="830"></line>
+<!-- Rungs -->
+<line stroke="#ffffff" stroke-linecap="round" stroke-width="5" x1="390" x2="410" y1="945" y2="925"></line>
+<line stroke="#ffffff" stroke-linecap="round" stroke-width="5" x1="450" x2="470" y1="925" y2="905"></line>
+<line stroke="#ffffff" stroke-linecap="round" stroke-width="5" x1="510" x2="530" y1="905" y2="885"></line>
+<line stroke="#ffffff" stroke-linecap="round" stroke-width="5" x1="570" x2="590" y1="885" y2="865"></line>
+<line stroke="#ffffff" stroke-linecap="round" stroke-width="5" x1="630" x2="650" y1="865" y2="845"></line>
+</g>
+<!-- Tangga 2: Cell 12 (X:850, Y:850) -> Cell 31 (X:950, Y:650) [Menolak Mencontek] -->
+<g filter="url(#glow-ladder)" opacity="0.85">
+<line stroke="#fe932c" stroke-linecap="round" stroke-width="12" x1="840" x2="940" y1="850" y2="650"></line>
+<line stroke="#00855d" stroke-linecap="round" stroke-width="12" x1="860" x2="960" y1="850" y2="650"></line>
+<line stroke="#fff" stroke-linecap="round" stroke-width="4" x1="845" x2="865" y1="820" y2="820"></line>
+<line stroke="#fff" stroke-linecap="round" stroke-width="4" x1="870" x2="890" y1="770" y2="770"></line>
+<line stroke="#fff" stroke-linecap="round" stroke-width="4" x1="895" x2="915" y1="720" y2="720"></line>
+<line stroke="#fff" stroke-linecap="round" stroke-width="4" x1="920" x2="940" y1="670" y2="670"></line>
+</g>
+<!-- Tangga 3 (UTAMA): Cell 28 (X:750, Y:750) -> Cell 84 (X:350, Y:150) [Melaporkan Pungli] -->
+<g filter="url(#glow-ladder)">
+<!-- Golden/Emerald Grand Ladder -->
+<line stroke="#00855d" stroke-linecap="round" stroke-width="16" x1="735" x2="340" y1="750" y2="160"></line>
+<line stroke="#fe932c" stroke-linecap="round" stroke-width="16" x1="765" x2="370" y1="750" y2="160"></line>
+<!-- Glowing Golden Rungs -->
+<line stroke="#ffdcc3" stroke-width="6" x1="720" x2="750" y1="700" y2="700"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="670" x2="700" y1="620" y2="620"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="620" x2="650" y1="540" y2="540"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="570" x2="600" y1="460" y2="460"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="520" x2="550" y1="380" y2="380"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="470" x2="500" y1="300" y2="300"></line>
+<line stroke="#ffdcc3" stroke-width="6" x1="420" x2="450" y1="220" y2="220"></line>
+</g>
+<!-- Tangga 4: Cell 51 (X:950, Y:450) -> Cell 67 (X:650, Y:350) [Menepati Janji] -->
+<g filter="url(#glow-ladder)" opacity="0.85">
+<line stroke="#00855d" stroke-linecap="round" stroke-width="12" x1="935" x2="645" y1="450" y2="350"></line>
+<line stroke="#fe932c" stroke-linecap="round" stroke-width="12" x1="955" x2="665" y1="450" y2="350"></line>
+<line stroke="#fff" stroke-width="4" x1="900" x2="915" y1="440" y2="425"></line>
+<line stroke="#fff" stroke-width="4" x1="820" x2="835" y1="410" y2="395"></line>
+<line stroke="#fff" stroke-width="4" x1="740" x2="755" y1="380" y2="365"></line>
+</g>
+<!-- Tangga 5: Cell 71 (X:950, Y:250) -> Cell 91 (X:950, Y:50) [Transparan Kas Kelas] -->
+<g filter="url(#glow-ladder)" opacity="0.9">
+<line stroke="#006948" stroke-linecap="round" stroke-width="12" x1="935" x2="935" y1="250" y2="50"></line>
+<line stroke="#fe932c" stroke-linecap="round" stroke-width="12" x1="965" x2="965" y1="250" y2="50"></line>
+<line stroke="#fff" stroke-width="5" x1="935" x2="965" y1="210" y2="210"></line>
+<line stroke="#fff" stroke-width="5" x1="935" x2="965" y1="170" y2="170"></line>
+<line stroke="#fff" stroke-width="5" x1="935" x2="965" y1="130" y2="130"></line>
+<line stroke="#fff" stroke-width="5" x1="935" x2="965" y1="90" y2="90"></line>
+</g>
+<!-- Ular 1: Cell 98 (X:250, Y:50) -> Cell 78 (X:250, Y:250) [Plagiarisme Tugas] -->
+<path d="M 250,50 C 290,100 210,180 250,250" fill="none" stroke="url(#snakeGrad)" stroke-linecap="round" stroke-width="16"></path>
+<circle cx="250" cy="50" fill="#ba1a1a" r="14"></circle>
+<circle cx="245" cy="45" fill="#ffffff" r="3"></circle>
+<circle cx="255" cy="45" fill="#ffffff" r="3"></circle>
+<!-- Ular 2: Cell 95 (X:550, Y:50) -> Cell 75 (X:550, Y:250) [Menyuap Pengawas] -->
+<path d="M 550,50 C 600,110 500,190 550,250" fill="none" stroke="url(#snakeGrad)" stroke-linecap="round" stroke-width="18"></path>
+<circle cx="550" cy="50" fill="#ba1a1a" r="14"></circle>
+<circle cx="545" cy="45" fill="#ffffff" r="3"></circle>
+<circle cx="555" cy="45" fill="#ffffff" r="3"></circle>
+<!-- Ular 3: Cell 64 (X:350, Y:350) -> Cell 36 (X:450, Y:650) [Membolos Ekskul] -->
+<path d="M 350,350 C 310,430 490,550 450,650" fill="none" stroke="url(#snakeGrad)" stroke-linecap="round" stroke-width="18"></path>
+<circle cx="350" cy="350" fill="#ba1a1a" r="14"></circle>
+<circle cx="345" cy="345" fill="#ffffff" r="3"></circle>
+<circle cx="355" cy="345" fill="#ffffff" r="3"></circle>
+<!-- Ular 4: Cell 48 (X:750, Y:550) -> Cell 26 (X:550, Y:750) [Memakai Uang Iuran] -->
+<path d="M 750,550 C 790,620 590,680 550,750" fill="none" stroke="url(#snakeGrad)" stroke-linecap="round" stroke-width="16"></path>
+<circle cx="750" cy="550" fill="#ba1a1a" r="14"></circle>
+<!-- Ular 5: Cell 16 (X:450, Y:850) -> Cell 6 (X:550, Y:950) [Mencontek] -->
+<path d="M 450,850 C 490,880 510,920 550,950" fill="none" stroke="url(#snakeGrad)" stroke-linecap="round" stroke-width="14"></path>
+<circle cx="450" cy="850" fill="#ba1a1a" r="12"></circle>
+</svg>
+<!-- 100 HTML Grid Cells rendered via flex/grid container -->
+<div class="grid grid-cols-10 grid-rows-10 w-full h-full gap-0.5 sm:gap-1 text-center relative z-10 font-bold" id="board-grid">
+<!-- Row 10: Cells 100 downto 91 (Top row) -->
+<!-- Cell 100 (Victory / Juara Integritas) -->
+<div class="relative bg-primary-fixed text-on-primary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-2 ring-primary">
+<span class="self-start text-[9px] font-extrabold text-primary">100</span>
+<span class="material-symbols-outlined text-primary text-base sm:text-2xl">trophy</span>
+<span class="text-[7px] sm:text-[9px] uppercase tracking-tighter font-extrabold text-primary">Puncak Juara</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">99</span>
+<span class="material-symbols-outlined text-outline-variant text-[12px] sm:text-[16px]">stars</span>
+</div>
+<!-- Cell 98: Snake Mouth Plagiarism -->
+<div class="bg-error-container text-on-error-container rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-error">
+<span class="self-start text-[9px] font-bold text-error">98</span>
+<span class="material-symbols-outlined text-error text-[14px] sm:text-[18px]">report_problem</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-error truncate w-full">Plagiat</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">97</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">96</span>
+</div>
+<!-- Cell 95: Snake Mouth Suap -->
+<div class="bg-error-container text-on-error-container rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-error">
+<span class="self-start text-[9px] font-bold text-error">95</span>
+<span class="material-symbols-outlined text-error text-[14px] sm:text-[18px]">money_off</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-error truncate w-full">Suap</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">94</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">93</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">92</span>
+</div>
+<!-- Cell 91: Ladder Top destination -->
+<div class="bg-primary-container/20 text-primary rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-primary">
+<span class="self-start text-[9px] font-bold">91</span>
+<span class="material-symbols-outlined text-primary text-[14px] sm:text-[18px]">thumb_up</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-primary truncate w-full">Kas Terbuka</span>
+</div>
+<!-- Row 9: Cells 81 to 90 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">81</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">82</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">83</span>
+</div>
+<!-- Cell 84: Ladder destination from 28 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-2 ring-secondary">
+<span class="self-start text-[9px] font-bold">84</span>
+<span class="material-symbols-outlined text-secondary text-[14px] sm:text-[18px]">verified</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-secondary truncate w-full">Lapor Pungli</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">85</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">86</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">87</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">88</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">89</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">90</span>
+</div>
+<!-- Row 8: Cells 80 downto 71 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">80</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">79</span>
+</div>
+<!-- Cell 78: Snake Tail from 98 -->
+<div class="bg-surface-container-high text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">78</span>
+<span class="material-symbols-outlined text-outline text-[12px]">south</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">77</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">76</span>
+</div>
+<!-- Cell 75: Snake Tail from 95 -->
+<div class="bg-surface-container-high text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">75</span>
+<span class="material-symbols-outlined text-outline text-[12px]">south</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">74</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">73</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">72</span>
+</div>
+<!-- Cell 71: Ladder Base to 91 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-secondary">
+<span class="self-start text-[9px] font-bold">71</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">stairs</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Transparan</span>
+</div>
+<!-- Row 7: Cells 61 to 70 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">61</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">62</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">63</span>
+</div>
+<!-- Cell 64: Snake Head (Membolos Ekskul) -->
+<div class="bg-error-container text-on-error-container rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-error">
+<span class="self-start text-[9px] font-bold text-error">64</span>
+<span class="material-symbols-outlined text-error text-[14px]">cancel</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-error truncate">Membolos</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">65</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">66</span>
+</div>
+<!-- Cell 67: Ladder top from 51 -->
+<div class="bg-primary-container/20 text-primary rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px] font-bold">67</span>
+<span class="material-symbols-outlined text-primary text-[14px]">handshake</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Tepati Janji</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">68</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">69</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">70</span>
+</div>
+<!-- Row 6: Cells 60 downto 51 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">60</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">59</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">58</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">57</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">56</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">55</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">54</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">53</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">52</span>
+</div>
+<!-- Cell 51: Ladder Base to 67 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-secondary">
+<span class="self-start text-[9px] font-bold">51</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">stairs</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Janji</span>
+</div>
+<!-- Row 5: Cells 41 to 50 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">41</span>
+</div>
+<!-- Cell 42: ELANG MERAH PLAYER 3 HERE -->
+<div class="relative bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-2 ring-error">
+<span class="self-start text-[9px]">42</span>
+<!-- Bidak 3: Elang Merah -->
+<div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-error text-on-error flex items-center justify-center shadow-lg transform -translate-y-1">
+<span class="material-symbols-outlined text-[16px]">flutter_dash</span>
+</div>
+<span class="text-[6px] sm:text-[8px] font-bold text-error">Elang</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">43</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">44</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">45</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">46</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">47</span>
+</div>
+<!-- Cell 48: Snake Head (Pakai Uang Iuran) -->
+<div class="bg-error-container text-on-error-container rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-error">
+<span class="self-start text-[9px] font-bold text-error">48</span>
+<span class="material-symbols-outlined text-error text-[14px]">savings</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-error truncate">Uang Kas</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">49</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">50</span>
+</div>
+<!-- Row 4: Cells 40 downto 31 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">40</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">39</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">38</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">37</span>
+</div>
+<!-- Cell 36: Snake Tail from 64 -->
+<div class="bg-surface-container-high text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">36</span>
+<span class="material-symbols-outlined text-outline text-[12px]">south</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">35</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">34</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">33</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">32</span>
+</div>
+<!-- Cell 31: Ladder top from 12 -->
+<div class="bg-primary-container/20 text-primary rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-primary">
+<span class="self-start text-[9px] font-bold">31</span>
+<span class="material-symbols-outlined text-primary text-[14px]">task_alt</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Anti-Contek</span>
+</div>
+<!-- Row 3: Cells 21 to 30 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">21</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">22</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">23</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">24</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">25</span>
+</div>
+<!-- Cell 26: Snake Tail from 48 -->
+<div class="bg-surface-container-high text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">26</span>
+<span class="material-symbols-outlined text-outline text-[12px]">south</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">27</span>
+</div>
+<!-- Cell 28: ACTIVE QUESTION CELL & KUMBARA HIJAU (PLAYER 1) HERE -->
+<div class="relative bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-md ring-4 ring-primary animate-pulse z-30">
+<span class="self-start text-[9px] font-extrabold text-primary">28</span>
+<!-- Bidak 1: Kumbara Hijau with Glowing Ring -->
+<div class="w-7 h-7 sm:w-9 sm:h-9 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-xl ring-2 ring-white">
+<span class="material-symbols-outlined text-[18px] sm:text-[22px]">pest_control</span>
+</div>
+<span class="text-[6px] sm:text-[8px] font-extrabold text-primary tracking-tight">Kumbara!</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">29</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">30</span>
+</div>
+<!-- Row 2: Cells 20 downto 11 -->
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">20</span>
+</div>
+<!-- Cell 19: KANCIL BIRU PLAYER 2 HERE -->
+<div class="relative bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-2 ring-tertiary">
+<span class="self-start text-[9px]">19</span>
+<!-- Bidak 2: Kancil Biru -->
+<div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[16px]">cruelty_free</span>
+</div>
+<span class="text-[6px] sm:text-[8px] font-bold text-tertiary">Kancil</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">18</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">17</span>
+</div>
+<!-- Cell 16: Snake Head (Mencontek) -->
+<div class="bg-error-container text-on-error-container rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-error">
+<span class="self-start text-[9px] font-bold text-error">16</span>
+<span class="material-symbols-outlined text-error text-[14px]">visibility_off</span>
+<span class="text-[6px] sm:text-[8px] font-bold text-error truncate">Contek</span>
+</div>
+<!-- Cell 15: RUSA KUNING PLAYER 4 HERE -->
+<div class="relative bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-2 ring-secondary">
+<span class="self-start text-[9px]">15</span>
+<!-- Bidak 4: Rusa Kuning -->
+<div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-lg">
+<span class="material-symbols-outlined text-[16px]">pets</span>
+</div>
+<span class="text-[6px] sm:text-[8px] font-bold text-secondary">Rusa</span>
+</div>
+<!-- Cell 14: Ladder top from 4 -->
+<div class="bg-primary-container/20 text-primary rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px] font-bold">14</span>
+<span class="material-symbols-outlined text-primary text-[14px]">account_balance_wallet</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Balik Dompet</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">13</span>
+</div>
+<!-- Cell 12: Ladder base to 31 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-secondary">
+<span class="self-start text-[9px] font-bold">12</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">stairs</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Tolak Contek</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">11</span>
+</div>
+<!-- Row 1: Cells 1 to 10 (Bottom row) -->
+<!-- Cell 1 (Mulai / Start) -->
+<div class="bg-surface-container-high text-primary rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-primary/40">
+<span class="self-start text-[9px] font-bold">1</span>
+<span class="material-symbols-outlined text-primary text-[14px]">flag</span>
+<span class="text-[6px] sm:text-[8px] uppercase tracking-tighter font-bold">Mulai</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">2</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">3</span>
+</div>
+<!-- Cell 4: Ladder Base to 14 -->
+<div class="bg-secondary-fixed text-on-secondary-fixed rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm ring-1 ring-secondary">
+<span class="self-start text-[9px] font-bold">4</span>
+<span class="material-symbols-outlined text-secondary text-[14px]">stairs</span>
+<span class="text-[6px] sm:text-[8px] font-bold truncate">Dompet</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">5</span>
+</div>
+<!-- Cell 6: Snake Tail from 16 -->
+<div class="bg-surface-container-high text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">6</span>
+<span class="material-symbols-outlined text-outline text-[12px]">south</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">7</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">8</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">9</span>
+</div>
+<div class="bg-surface-container-lowest text-on-surface-variant rounded flex flex-col items-center justify-between p-0.5 sm:p-1 text-[10px] sm:text-label-sm shadow-sm">
+<span class="self-start text-[9px]">10</span>
+</div>
+</div>
+</div>
+<!-- Board Bottom Legend & Mini Helper -->
+<div class="w-full mt-space-sm pt-space-xs flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-3">
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-primary inline-block"></span> Kumbara (#28)</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-tertiary inline-block"></span> Kancil (#19)</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-error inline-block"></span> Elang (#42)</span>
+<span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-secondary inline-block"></span> Rusa (#15)</span>
+</div>
+<span class="text-primary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">touch_app</span> Klik petak untuk melihat rincian moral
+            </span>
+</div>
+</div>
+</div>
+<!-- ================= RIGHT COLUMN: INTERACTIVE CONTROLS & QUIZ CARD (Cols 8-12) ================= -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Interactive Dice & Turn Roller Widget -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">casino</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lempar Dadu Integritas</h2>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+              Kocokan Ke-6
+            </span>
+</div>
+<div class="flex items-center justify-between gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<!-- 3D Tactile Dice Simulation -->
+<div class="w-20 h-20 bg-surface-container-lowest rounded-2xl shadow-[0_8px_0_#bccac0] flex flex-col items-center justify-center p-2 relative transition-transform transform active:translate-y-1" id="dice-visual">
+<!-- Dice 5 Pips Layout -->
+<div class="grid grid-cols-3 grid-rows-3 w-12 h-12">
+<span class="w-2.5 h-2.5 rounded-full bg-primary self-start justify-self-start"></span>
+<span></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary self-start justify-self-end"></span>
+<span></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary self-center justify-self-center"></span>
+<span></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary self-end justify-self-start"></span>
+<span></span>
+<span class="w-2.5 h-2.5 rounded-full bg-primary self-end justify-self-end"></span>
+</div>
+</div>
+<!-- Dice Roll Action & Stat -->
+<div class="flex-1 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Hasil Dadu Terakhir:</span>
+<span class="font-bold text-primary text-body-lg font-body-lg">Angka 5</span>
+</div>
+<button class="w-full py-3 px-4 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_0_#005137] active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-2 font-extrabold tracking-wide" id="btn-roll-dice" type="button">
+<span class="material-symbols-outlined">autorenew</span>
+                LEMPAR DADU SEKARANG
+              </button>
+<span class="text-center font-label-sm text-label-sm text-on-surface-variant">
+                Budi melangkah 5 petak dari #23 menuju #28
+              </span>
+</div>
+</div>
+</div>
+<!-- ACTIVE QUIZ CARD SIMULATION (Petak #28 Dilemma) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-md ring-2 ring-secondary/50 relative overflow-hidden flex flex-col" id="card-active-quiz">
+<!-- Top Badge Bar -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">stairs</span>
+              TANTANGAN TANGGA KEBAJIKAN: PETAK #28
+            </span>
+<span class="text-primary font-bold font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">timer</span> Waktu: 45s
+            </span>
+</div>
+<!-- Moral Scenario Description -->
+<div class="mb-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">
+              Uang Jajan Teman Terjatuh di Kantin
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Saat istirahat di kantin sekolah, kamu melihat teman sekelasmu tidak sengaja menjatuhkan selembar uang <strong>Rp10.000</strong>. Dia tidak sadar dan terus berjalan. Kantin sedang ramai dan tidak ada orang lain yang memperhatikanmu. Apa tindakan berintegritas yang kamu ambil?
+            </p>
+</div>
+<!-- Educational Stakes Alert Box -->
+<div class="p-space-sm rounded-lg bg-surface-container mb-space-md flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-2xl flex-shrink-0">info</span>
+<div class="font-body-sm text-body-sm text-on-surface">
+<strong class="text-secondary font-bold">Aturan Gerak:</strong> Jika menjawab Benar, kamu meluncur naik ke <strong>Petak 84</strong> &amp; dapat +50 Poin Integritas! Jika Salah, tetap di Petak 28.
+            </div>
+</div>
+<!-- Multiple Choice Options -->
+<div class="flex flex-col gap-space-sm mb-space-md" id="quiz-options-group">
+<!-- Option A (Benar) -->
+<button class="quiz-option-btn text-left p-space-sm md:p-space-md rounded-xl bg-surface-container-low hover:bg-primary-fixed/30 active:scale-[0.99] transition-all flex items-start gap-space-sm shadow-sm group" type="button">
+<span class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-md font-label-md flex-shrink-0 shadow-sm">
+                A
+              </span>
+<div class="flex-1">
+<p class="font-body-md text-body-md text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Mengambilnya segera dan mengejar teman untuk mengembalikannya secara utuh.
+                </p>
+<span class="text-[11px] text-primary font-bold hidden group-focus:inline-block">
+                  • Sesuai Nilai Kejujuran &amp; Tanggung Jawab
+                </span>
+</div>
+</button>
+<!-- Option B -->
+<button class="quiz-option-btn text-left p-space-sm md:p-space-md rounded-xl bg-surface-container-low hover:bg-error-container/40 active:scale-[0.99] transition-all flex items-start gap-space-sm shadow-sm group" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-bold text-label-md font-label-md flex-shrink-0">
+                B
+              </span>
+<p class="font-body-md text-body-md text-on-surface flex-1">
+                Membiarkan saja tergeletak di lantai karena merasa itu bukan urusan pribadiku.
+              </p>
+</button>
+<!-- Option C -->
+<button class="quiz-option-btn text-left p-space-sm md:p-space-md rounded-xl bg-surface-container-low hover:bg-error-container/40 active:scale-[0.99] transition-all flex items-start gap-space-sm shadow-sm group" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-bold text-label-md font-label-md flex-shrink-0">
+                C
+              </span>
+<p class="font-body-md text-body-md text-on-surface flex-1">
+                Mengambilnya diam-diam lalu menggunakannya untuk membeli gorengan di kantin.
+              </p>
+</button>
+<!-- Option D -->
+<button class="quiz-option-btn text-left p-space-sm md:p-space-md rounded-xl bg-surface-container-low hover:bg-error-container/40 active:scale-[0.99] transition-all flex items-start gap-space-sm shadow-sm group" type="button">
+<span class="w-7 h-7 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-bold text-label-md font-label-md flex-shrink-0">
+                D
+              </span>
+<p class="font-body-md text-body-md text-on-surface flex-1">
+                Mengambilnya dan pura-pura mengumumkan di kelas dengan harapan tidak ada yang mengaku.
+              </p>
+</button>
+</div>
+<!-- Dynamic Feedback Container (Simulated Response) -->
+<div class="hidden p-space-md rounded-xl bg-primary-fixed text-on-primary-fixed mb-space-sm animate-fade-in" id="quiz-feedback-box">
+<div class="flex items-center gap-space-sm mb-1">
+<span class="material-symbols-outlined text-primary text-2xl font-bold">check_circle</span>
+<strong class="font-headline-sm text-headline-sm text-primary">Luar Biasa! Jawaban Sangat Tepat!</strong>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-fixed leading-normal">
+              Kamu mempraktikkan nilai <em>Kejujuran</em> dan <em>Peduli</em>. Bidak Kumbara Hijau berhak melesat melewati Tangga Kebajikan dari Petak 28 ke <strong>Petak 84</strong>! Bonus +50 Poin Integritas ditambahkan.
+            </p>
+</div>
+<!-- Submit Answer Trigger -->
+<div class="flex items-center justify-end gap-space-sm pt-space-xs">
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_3px_0_#005137] active:translate-y-0.5 active:shadow-none transition-all flex items-center gap-1.5 font-bold" id="btn-submit-answer" type="button">
+<span>Konfirmasi Pilihan</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</div>
+<!-- PLAYER STATUS CARDS (4 Players Table Widget) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">group</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Klasemen &amp; Status Bidak</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Peserta Aktif</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Player 1 (Kumbara Hijau - Active Human) -->
+<div class="p-space-sm rounded-xl bg-primary-fixed/30 ring-2 ring-primary flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold text-label-sm shadow-sm">
+                    1
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-extrabold truncate">Budi (Kumbara)</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">Pemain 1 • Manusia</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold">Giliran</span>
+</div>
+<div class="flex items-center justify-between pt-2 text-on-surface font-label-sm text-label-sm">
+<span>Posisi: <strong class="text-primary font-bold">Petak #28</strong></span>
+<span>Integritas: <strong class="text-primary font-bold">230 Poin</strong></span>
+</div>
+</div>
+<!-- Player 2 (Kancil Biru - Bot AI Santai) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-bold text-label-sm shadow-sm">
+                    2
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Bot Kancil</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bot AI Santai</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">Menunggu</span>
+</div>
+<div class="flex items-center justify-between pt-2 text-on-surface font-label-sm text-label-sm">
+<span>Posisi: <strong class="text-tertiary font-bold">Petak #19</strong></span>
+<span>Integritas: <strong class="text-tertiary font-bold">140 Poin</strong></span>
+</div>
+</div>
+<!-- Player 3 (Elang Merah - Human 2) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-error text-on-error flex items-center justify-center font-bold text-label-sm shadow-sm">
+                    3
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Siti (Elang)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pemain 3 • Manusia</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">Menunggu</span>
+</div>
+<div class="flex items-center justify-between pt-2 text-on-surface font-label-sm text-label-sm">
+<span>Posisi: <strong class="text-error font-bold">Petak #42</strong></span>
+<span>Integritas: <strong class="text-error font-bold">185 Poin</strong></span>
+</div>
+</div>
+<!-- Player 4 (Rusa Kuning - Bot AI Pintar) -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between mb-1">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-sm shadow-sm">
+                    4
+                  </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Bot Rusa</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bot AI Pintar</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm">Menunggu</span>
+</div>
+<div class="flex items-center justify-between pt-2 text-on-surface font-label-sm text-label-sm">
+<span>Posisi: <strong class="text-secondary font-bold">Petak #15</strong></span>
+<span>Integritas: <strong class="text-secondary font-bold">160 Poin</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- GAME LOG & NARRATIVE HISTORY -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col" id="riwayat-permainan">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary">history</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Log Aktivitas Permainan</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">Terbaru</span>
+</div>
+<div class="flex flex-col gap-space-sm max-h-56 overflow-y-auto pr-1">
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-surface-container-low font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-primary mt-1.5 flex-shrink-0"></span>
+<div class="flex-1">
+<strong class="text-primary font-bold">Budi (Kumbara)</strong> melempar dadu: <strong>5</strong>! Bidak melangkah ke <strong>Petak #28</strong> (Pangkal Tangga Kejujuran).
+                <span class="block text-[11px] text-on-surface-variant mt-0.5">Baru saja</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-error mt-1.5 flex-shrink-0"></span>
+<div class="flex-1">
+<strong class="text-error font-bold">Siti (Elang)</strong> mendarat di <strong>Petak #42</strong> dan berhasil memperoleh Lencana <em>"Jujur Sejati"</em> (+40 Poin).
+                <span class="block text-[11px] text-on-surface-variant mt-0.5">2 menit lalu</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary mt-1.5 flex-shrink-0"></span>
+<div class="flex-1">
+<strong class="text-tertiary font-bold">Bot Kancil</strong> menjawab Benar pada Dilema Contek di <strong>Petak #16</strong>: Selamat dari jebakan penurunan ke petak #6!
+                <span class="block text-[11px] text-on-surface-variant mt-0.5">4 menit lalu</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5 p-2 rounded-lg bg-surface-container-lowest font-body-sm text-body-sm">
+<span class="w-2 h-2 rounded-full bg-secondary mt-1.5 flex-shrink-0"></span>
+<div class="flex-1">
+<strong class="text-secondary font-bold">Bot Rusa</strong> melangkah 3 petak menuju <strong>Petak #15</strong> (Zona Belajar Disiplin Waktu).
+                <span class="block text-[11px] text-on-surface-variant mt-0.5">6 menit lalu</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Educational Character Quote Banner -->
+<section class="max-w-7xl mx-auto w-full px-margin md:px-margin-desktop mb-space-xl">
+<div class="bg-gradient-to-r from-primary-container via-primary to-primary-container text-on-primary rounded-2xl p-space-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 ring-2 ring-white/30">
+<span class="material-symbols-outlined text-4xl text-secondary-fixed">emoji_events</span>
+</div>
+<div class="flex flex-col">
+<span class="text-secondary-fixed font-label-md text-label-md font-bold uppercase tracking-wider">Mutiara Kumbara Hari Ini</span>
+<p class="font-headline-sm text-headline-sm font-extrabold text-white mt-0.5">
+            "Kejujuran bukanlah tentang tidak pernah salah, melainkan berani mengakui dan memilih jalan yang benar meskipun tak ada yang melihat."
+          </p>
+</div>
+</div>
+<a class="px-5 py-3 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-extrabold shadow-[0_3px_0_#904d00] active:translate-y-0.5 active:shadow-none transition-all flex items-center gap-1.5 flex-shrink-0" data-path="aturan-&amp;-nilai-integritas" href="#">
+<span>Katalog 9 Nilai Integritas</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Script for Micro-Interactions (Dice Roll, Quiz Selection, Feedback) -->
+<script>
+    (function initKumbaraGameArena() {
+      // 1. Interactive Multiple Choice Selection
+      const optionButtons = document.querySelectorAll('.quiz-option-btn');
+      let selectedOption = null;
+
+      optionButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          optionButtons.forEach(b => {
+            b.classList.remove('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+            b.classList.add('bg-surface-container-low');
+          });
+          this.classList.remove('bg-surface-container-low');
+          this.classList.add('ring-2', 'ring-primary', 'bg-primary-fixed/20');
+          selectedOption = this;
+        });
+      });
+
+      // 2. Submit Answer & Reveal Feedback
+      const btnSubmit = document.getElementById('btn-submit-answer');
+      const feedbackBox = document.getElementById('quiz-feedback-box');
+      
+      if (btnSubmit && feedbackBox) {
+        btnSubmit.addEventListener('click', function() {
+          if (!selectedOption) {
+            alert('Silakan pilih salah satu opsi jawaban integritas terlebih dahulu!');
+            return;
+          }
+          feedbackBox.classList.remove('hidden');
+          btnSubmit.disabled = true;
+          btnSubmit.classList.add('opacity-50', 'cursor-not-allowed');
+          btnSubmit.innerHTML = '<span>Jawaban Tersimpan!</span> <span class="material-symbols-outlined text-[18px]">verified</span>';
+        });
+      }
+
+      // 3. 3D Dice Roll Interactive Shake
+      const btnRollDice = document.getElementById('btn-roll-dice');
+      const diceVisual = document.getElementById('dice-visual');
+
+      if (btnRollDice && diceVisual) {
+        btnRollDice.addEventListener('click', function() {
+          diceVisual.classList.add('animate-spin');
+          btnRollDice.disabled = true;
+          setTimeout(() => {
+            diceVisual.classList.remove('animate-spin');
+            btnRollDice.disabled = false;
+          }, 800);
+        });
+      }
+
+      // 4. Music Play Toggle
+      const btnSound = document.getElementById('btn-sound-toggle');
+      if (btnSound) {
+        let isPlaying = true;
+        btnSound.addEventListener('click', function() {
+          isPlaying = !isPlaying;
+          const icon = this.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.textContent = isPlaying ? 'music_note' : 'music_off';
+          }
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-extrabold">KUMBARA</span><span class="font-label-sm text-label-sm text-on-surface-variant">| Media Pembelajaran Karakter &amp; Antikorupsi</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left mt-1">Menanamkan 9 Nilai Integritas: Jujur, Tanggung Jawab, Disiplin, Mandiri, Kerja Keras, Sederhana, Berani, Peduli, dan Adil.</p></div><div class="flex items-center gap-space-md"><span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Karya @wea_aew</span><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 KUMBARA. Hak Cipta Dilindungi.</span></div></div></footer></body></html>

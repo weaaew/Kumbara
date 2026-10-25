@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KUMBARA - Petualangan Integritas</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-tertiary-fixed-variant":"#004b73","outline-variant":"#bccac0","on-primary-fixed":"#002114","outline":"#6d7a72","on-background":"#0d1c2e","tertiary":"#006194","on-primary-container":"#f5fff7","surface-variant":"#d5e3fc","on-surface":"#0d1c2e","surface-container-high":"#dce9ff","primary":"#006948","surface-bright":"#f8f9ff","on-secondary-fixed":"#2f1500","primary-fixed-dim":"#68dba9","tertiary-container":"#007bb9","on-error":"#ffffff","inverse-surface":"#233144","surface-container":"#e6eeff","surface-container-lowest":"#ffffff","on-primary-fixed-variant":"#005137","inverse-on-surface":"#eaf1ff","on-primary":"#ffffff","on-secondary-fixed-variant":"#6e3900","primary-fixed":"#85f8c4","on-surface-variant":"#3d4a42","on-tertiary-fixed":"#001d31","surface-container-low":"#eff4ff","secondary-container":"#fe932c","secondary":"#904d00","on-secondary-container":"#663500","secondary-fixed-dim":"#ffb77d","surface-dim":"#ccdbf3","tertiary-fixed-dim":"#93ccff","surface":"#f8f9ff","inverse-primary":"#68dba9","secondary-fixed":"#ffdcc3","on-error-container":"#93000a","primary-container":"#00855d","on-secondary":"#ffffff","surface-container-highest":"#d5e3fc","on-tertiary-container":"#fdfcff","tertiary-fixed":"#cce5ff","background":"#f8f9ff","error-container":"#ffdad6","error":"#ba1a1a","on-tertiary":"#ffffff","surface-tint":"#006c4a"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-tablet":"1.5rem","space-xs":"0.25rem","space-md":"1rem","margin":"1rem","gutter-desktop":"1.5rem","space-sm":"0.5rem","space-2xl":"3rem","space-xl":"2rem","space-lg":"1.5rem","gutter":"1rem","margin-desktop":"2rem"},fontFamily:{"display-hero-mobile":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"]},fontSize:{"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"700"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"500"}],"label-lg":["16px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Kumbara Logo" class="h-9 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV3uc8FLyUHWFn9Q0hFOpPGTsmVNygGCWgqi5veDBmfTJ4NAyP_Xn2vbsL8NvFs5I9YU9Wv8TMrFoEnbpK6AeSw-oJ94usCEaANEEA1hPKYmYWNz5bGYFoFwedpCGs0O8dcnbktMOuC__AE_kN_1ygwwh7lu2n3qlq09hlTX0dgZ2iPFcWod1i00xQZEXck6VTd5sTg0J0Jd23YtN77XvSAXLYRZDDMUyZ7omX2ZrETgeA-LMJKxY3Fw"/><div class="flex flex-col justify-center min-w-0"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">KUMBARA</span><span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Karya @wea_aew</span></div><span class="hidden sm:block font-label-sm text-label-sm text-on-surface-variant truncate">Karakter Utuh Mandiri, Berani, Adil, Rajin, &amp; Amanah</span></div></div><div class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container rounded-full"><button class="px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary text-on-primary transition-all shadow-sm" type="button">SD Kelas 1-3</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SD Kelas 4-6</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMP</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMA Sederajat</button></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="BGM dan SFX Audio" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all font-label-sm text-label-sm shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px] text-primary">volume_up</span><span class="hidden md:inline font-bold">Audio</span></button><button aria-label="Reset Permainan" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-sm text-label-sm shadow-[0_2px_0_#ba1a1a] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px]">restart_alt</span><span class="hidden md:inline font-bold">Reset</span></button><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm" title="Profil Peserta Kumbara"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></div><div class="bg-surface-container-low border-t border-outline-variant/20 shadow-[0_2px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop overflow-x-auto"><nav class="flex items-center gap-space-xs py-2 min-w-max" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-sm rounded-lg"><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="beranda-&amp;-pemilihan-level---kumbara-integritas" href="#">Beranda &amp; Level</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="arena-permainan---papan-ular-tangga-integritas" href="#">Arena Permainan</a><a aria-current="page" class="px-3 py-1.5 transition-all bg-primary-container text-on-primary-container font-bold shadow-sm rounded-lg" data-path="panduan-aturan-&amp;-9-nilai-integritas---kumbara" href="#">Panduan Aturan &amp; 9 Nilai Integritas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="papan-peringkat-&amp;-prestasi-siswa---kumbara" href="#">Papan Peringkat &amp; Prestasi</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="modul-evaluasi-&amp;-refleksi---kumbara-integritas" href="#">Evaluasi &amp; Refleksi</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="admin-basis-data-&amp;-konfigurasi---kumbara-integritas" href="#">Admin Basis Data</a></nav></div></div></header><main class="w-full pt-32 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Decorator -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[850px] h-[340px] bg-gradient-to-r from-primary/15 via-secondary-container/10 to-tertiary/15 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Section: Header / Hero Panduan -->
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop pt-space-lg pb-space-2xl relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Hero Content -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              Karya @wea_aew
+            </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">school</span>
+              Modul Edukasi KPK • 9 Nilai Dasar
+            </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+              100 Petak Integritas
+            </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="text-secondary font-label-lg text-label-lg tracking-wider uppercase">Pedoman Lengkap Pembelajaran</span>
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-tight">
+              Panduan Main &amp; <br class="hidden sm:inline"/>
+<span class="text-primary underline decoration-secondary decoration-wavy decoration-2">9 Nilai Integritas</span>
+</h1>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Selamat datang di petualangan papan 100 petak KUMBARA! Dirancang untuk membangun karakter tangguh anak Indonesia melalui simulasi pengambilan keputusan moral, dilema etika nyata, serta penguatan 9 nilai antikorupsi sejak dini.
+          </p>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<button class="flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_0_#005137] hover:bg-primary-container active:translate-y-1 active:shadow-none transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[22px]">play_circle</span>
+<span>Mulai Uji Coba Cepat</span>
+</button>
+<a class="flex items-center gap-2.5 px-5 py-3.5 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high font-label-lg text-label-lg shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none transition-all cursor-pointer" href="#pedoman-pdf">
+<span class="material-symbols-outlined text-primary text-[22px]">download_for_offline</span>
+<span>Unduh Buku Panduan (PDF)</span>
+</a>
+<a class="flex items-center gap-1.5 px-4 py-3 rounded-xl text-on-surface-variant hover:text-primary font-label-md text-label-md transition-all" href="#aturan-mekanika">
+<span>Pelajari 3 Aturan</span>
+<span class="material-symbols-outlined text-[18px]">arrow_downward</span>
+</a>
+</div>
+<!-- Mini Stats Strip -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm">
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">100</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Petak Tantangan</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-extrabold">9 Nilai</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Integritas Inti</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-3 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary font-extrabold">2 - 4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pemain / Bot AI</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Showcase / Photo Card -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="relative bg-surface-container rounded-2xl p-space-md shadow-xl overflow-hidden">
+<div class="relative aspect-[4/3] rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Indonesian elementary and junior high school students happily gathered around a colorful 100-cell snakes and ladders integrity board game on a wooden classroom desk. Warm tropical morning sunlight pouring through library windows, children laughing, holding tactile dice and vibrant avatar game pieces. Modern bright documentary style, emerald green, warm amber tones, crisp cinematic focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaef_t3V5vyZYd0kvSDqgxm0RaFUbL0U93FZsbm6dcT-hugpXEkqQ4PK-mL0SJI9aT24fl5SAMJMewTvir2lzEz0RsndhpuCqyY4UrzAQGbTjGKjxTz4R86hvWH-1yjeSCcSU6CcguvGwy3FhANKWFawbor4y6anNPvhZiKN5x2XUotj9tUejChFuHVK6lJSoPjCx6Mc1v4mon0ux7PJZWcAFBHoZT2LuRdtwu4ho01S4QVOVOIb0k-w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 text-surface flex items-center justify-between">
+<div>
+<p class="font-label-sm text-label-sm text-secondary-fixed font-bold">Aktivitas Kelas Bermakna</p>
+<p class="font-headline-sm text-headline-sm text-on-primary">Belajar Adil &amp; Berani</p>
+</div>
+<div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-md">
+<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+</div>
+</div>
+</div>
+<!-- Mini Tip Callout -->
+<div class="mt-space-md bg-surface-container-lowest rounded-xl p-space-md flex items-start gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[26px] flex-shrink-0">lightbulb</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface">Tips Fasilitator &amp; Guru</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Gunakan sesi permainan selama 20-30 menit, dilanjutkan dengan 15 menit diskusi refleksi perilaku harian.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Mekanisme Bermain & Aturan Papan (3 Kartu Interaktif) -->
+<section class="w-full py-space-2xl bg-surface-container-lowest" id="aturan-mekanika">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col gap-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">sports_esports</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wider uppercase font-bold">Mekanika Permainan</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">3 Pilar Aturan di Papan 100 Petak</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Setiap putaran dadu menentukan langkah, tetapi setiap keputusan moral menentukan apakah kamu melesat naik atau tergelincir turun.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs self-start md:self-auto bg-surface-container-low p-1 rounded-xl">
+<span class="px-3 py-1 rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface font-bold">Papan Adaptif</span>
+<span class="px-3 py-1 font-label-sm text-label-sm text-on-surface-variant">Mode Kelas &amp; Mandiri</span>
+</div>
+</div>
+<!-- 3 Core Mechanism Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Kartu 1: Petak Biasa & Lempar Dadu -->
+<div class="group relative bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[32px]">casino</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-surface-container text-tertiary font-label-sm text-label-sm font-extrabold">Petak 1 - 100</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">1. Langkah Dadu &amp; Giliran</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Pemain melempar dadu 3D secara bergiliran (angka 1 s/d 6). Bergerak maju menyusuri alur ular tangga dari petak 1 menuju petak 100 kemenangan.
+              </p>
+</div>
+<!-- Rule Micro Details -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Mendukung 2-4 siswa bergantian atau vs AI Kumbara.</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Angka 6 mendapat bonus lemparan tambahan 1x.</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+<span>Setiap langkah menambah Poin Keaktifan dasar.</span>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Strip -->
+<div class="mt-space-lg pt-space-md bg-surface-container rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-4 h-4 rounded-full bg-error"></div>
+<div class="w-4 h-4 rounded-full bg-tertiary"></div>
+<div class="w-4 h-4 rounded-full bg-secondary"></div>
+<div class="w-4 h-4 rounded-full bg-primary"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold">4 Bidak Siswa</span>
+</div>
+</div>
+<!-- Kartu 2: Tangga Kebajikan -->
+<div class="group relative bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-inner">
+<span class="material-symbols-outlined text-[32px]">stairs</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-extrabold">+50 Integritas</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">2. Tangga Kebajikan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mendarat di pangkal tangga membuka kartu <strong class="text-secondary">Dilema Kejujuran</strong>. Jawab tantangan etika dengan benar untuk melesat naik!
+              </p>
+</div>
+<!-- Dynamic Logic Card -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">trending_up</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Jawaban Berintegritas (Benar)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bidak langsung terbang melesat ke puncak tangga dan mengantongi +50 Poin Karakter.</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-outline text-[20px] flex-shrink-0">pause_circle</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Jawaban Kurang Tepat (Salah)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bidak tetap berada di posisi pangkal dan mendapat kartu edukasi reflektif.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-secondary-fixed/50 rounded-xl p-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed font-bold">Contoh: Mengakui Salah Piring Jatuh</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">auto_stories</span>
+</div>
+</div>
+<!-- Kartu 3: Ular Korupsi & Jebakan -->
+<div class="group relative bg-surface-container-low rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-14 h-14 rounded-2xl bg-error-container flex items-center justify-center text-on-error-container shadow-inner">
+<span class="material-symbols-outlined text-[32px]">warning</span>
+</div>
+<span class="px-3 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-extrabold">Ujian Benteng Diri</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">3. Ular Korupsi &amp; Jebakan</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Mendarat di kepala ular berarti dihadapkan pada godaan jalan pintas (curang, menyontek, gratifikasi kecil). Waspadalah!
+              </p>
+</div>
+<!-- Dynamic Logic Card -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] flex-shrink-0">shield</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">Menolak Curang (Benar)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Kamu membentengi diri! Bidak selamat di kepala ular tanpa tergelincir jatuh.</span>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container flex items-start gap-2.5">
+<span class="material-symbols-outlined text-error text-[20px] flex-shrink-0">south</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-error font-bold">Tergoda / Salah Pilih</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bidak merosot turun ke ujung ekor ular serta kehilangan 20 Poin Keteladanan.</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-md bg-error-container/60 rounded-xl p-3 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-error-container font-bold">Contoh: Menerima Bocoran Kunci Ujian</span>
+<span class="material-symbols-outlined text-error text-[20px]">psychology_alt</span>
+</div>
+</div>
+</div>
+<!-- Flow Infographic Banner -->
+<div class="bg-surface-container rounded-2xl p-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-on-primary font-extrabold text-headline-sm flex-shrink-0">
+            100
+          </div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Kondisi Kemenangan • Juara Integritas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Pemain yang pertama kali mencapai petak 100 dengan angka pas, serta memiliki akumulasi poin integritas tertinggi dinobatkan sebagai Duta Antikorupsi Kelas!</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high font-label-sm text-label-sm text-on-surface">Refleksi Pasca Main Wajib</span>
+<span class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">Sertifikat Siswa</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Visual Mini Breakout (Classroom Setup) -->
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop py-space-xl w-full">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg items-center bg-surface-container-low rounded-2xl p-space-lg md:p-space-xl">
+<div class="relative h-64 md:h-80 rounded-xl overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="An Indonesian teacher facilitating an engaging integrity board game session in an elementary school classroom. Teacher smiling warmly, guiding young diverse students discussing ethics card questions, colorful posters about honesty on blackboard in background. Vivid emerald green and sunny golden hues, educational atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0x2E7VaDF2h4pjGQMBnRvjkXeqE-t061FbiInk1Hon5dIK8jSMEZB3-eSJXx693n5zPDCJXSLtcUacILNpd8VSxNjOOiptH_o2IcXowV_1bS46QXibkdHi-yXqAk9s4sTSLyb3rGuKA7lUTckjiDzYGSUKy-MZrV64CF6-V2tR4qb8VMuDlmA-PUn5VEZttYpi6dFDVqlVpQYgfv6bPngrniXnid4wko6IRHrlWlTJkxvWIKjRB2MSA"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 backdrop-blur-md px-3 py-1.5 rounded-lg font-label-sm text-label-sm text-primary font-bold">
+          Skenario Penerapan Kurikulum Merdeka
+        </div>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">diversity_3</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Metode Pembelajaran Aktif</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">
+          Bukan Sekadar Menang, Tapi Mengasah Suara Hati
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Papan KUMBARA memodelkan situasi kehidupan nyata anak: saat teman mengajak menyontek, saat menemukan uang receh di lorong musholla sekolah, atau saat melihat kawan diejek. Siswa belajar bahwa setiap tindakan memiliki konsekuensi moral.
+        </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-xl text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">psychology</span>
+<span>Berpikir Kritis Etis</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-xl text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">forum</span>
+<span>Dialog Empatik Terbimbing</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-lowest px-3 py-2 rounded-xl text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified_user</span>
+<span>Profil Pelajar Pancasila</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: 9 Nilai Integritas KPK (KUMBARA Interactive Catalog) -->
+<section class="w-full py-space-2xl bg-surface" id="sembilan-nilai">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col gap-space-xl">
+<!-- Section Header with Filter / Tab Indicator -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">military_tech</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Katalog 9 Nilai Dasar Antikorupsi</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Internalisasi 9 Nilai Integritas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Sembilan nilai utama KPK disarikan dalam bahasa ramah anak dan contoh tindakan konkret di lingkungan sekolah, keluarga, dan pergaulan.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Akronim:</span>
+<span class="px-3 py-1 rounded-lg bg-primary-fixed text-on-primary-fixed font-headline-sm text-headline-sm font-black tracking-widest shadow-sm">
+            JU-MA-T BE-R-SE-PE-DA K-K
+          </span>
+</div>
+</div>
+<!-- 9 Bento Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Nilai 1: JUJUR -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">handshake</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">01</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-extrabold">Jujur</h3>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-bold">Fondasi Utama</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kesesuaian antara hati nurani, perkataan, dan perbuatan. Tidak berbohong demi keuntungan pribadi.
+              </p>
+</div>
+<!-- Real Life Action Examples -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Tidak menyontek saat ulangan berlangsung.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Mengakui terus terang jika tugas belum dikerjakan.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Mengembalikan uang atau barang temuan ke guru piket.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #12, #45, #88</span>
+<span class="text-primary font-bold">Dilema Etika #1</span>
+</div>
+</div>
+<!-- Nilai 2: TANGGUNG JAWAB -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">assignment_turned_in</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">02</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-secondary font-extrabold">Tanggung Jawab</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Amanah</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Kesadaran manusia akan tingkah laku atau perbuatannya yang disengaja maupun yang tidak disengaja.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Menuntaskan tugas kelompok sesuai bagian tanpa melempar beban.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Menjaga kebersihan dan fasilitas umum perpustakaan.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Berani menanggung konsekuensi bila merusak barang sekolah.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #24, #61</span>
+<span class="text-secondary font-bold">Dilema Etika #2</span>
+</div>
+</div>
+<!-- Nilai 3: DISIPLIN -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">schedule</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">03</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-tertiary font-extrabold">Disiplin</h3>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Ketaatan</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Ketaatan dan kepatuhan terhadap peraturan yang telah disepakati bersama secara konsisten tanpa pengawasan.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Hadir tepat waktu sebelum bel masuk sekolah berbunyi.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Tertib mengantre saat berbelanja di kantin atau pinjam buku.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Mengenakan seragam lengkap dan rapi sesuai hari yang ditentukan.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #07, #38, #72</span>
+<span class="text-tertiary font-bold">Dilema Etika #3</span>
+</div>
+</div>
+<!-- Nilai 4: MANDIRI -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">self_improvement</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">04</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Mandiri</h3>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">Berdikari</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Tidak mudah bergantung pada orang lain dalam menyelesaikan tugas dan urusan sehari-hari.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Menyiapkan buku pelajaran dan seragam sendiri di rumah.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Mengerjakan pekerjaan rumah (PR) tanpa meminta contekan.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Mampu mengelola uang saku harian dengan bijak.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #19, #54</span>
+<span class="text-primary font-bold">Dilema Etika #4</span>
+</div>
+</div>
+<!-- Nilai 5: KERJA KERAS -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">fitness_center</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">05</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-secondary font-extrabold">Kerja Keras</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Gigih</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Ketekunan dan daya juang tinggi dalam mencapai impian tanpa mencari jalan pintas yang merugikan.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Pantang menyerah saat memecahkan soal matematika yang rumit.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Rajin mengulang materi pelajaran di rumah menjelang ujian.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Disiplin berlatih dalam ekstrakurikuler minat bakat.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #31, #80</span>
+<span class="text-secondary font-bold">Dilema Etika #5</span>
+</div>
+</div>
+<!-- Nilai 6: SEDERHANA -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-tertiary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">eco</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">06</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-tertiary font-extrabold">Sederhana</h3>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Bersyukur</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Hidup sesuai kebutuhan wajar, tidak berlebih-lebihan, dan tidak memamerkan kekayaan/kemewahan.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Bersyukur dengan bekal makanan sehat yang disiapkan orang tua.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Tidak memamerkan gawai atau barang mahal di lingkungan kelas.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px] mt-0.5">check</span>
+<span>Menghargai teman tanpa memandang latar belakang ekonominya.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #15, #67</span>
+<span class="text-tertiary font-bold">Dilema Etika #6</span>
+</div>
+</div>
+<!-- Nilai 7: BERANI -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">shield_with_heart</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">07</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-error font-extrabold">Berani</h3>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Ksatria</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Keteguhan hati membela kebenaran dan keadilan, serta berani menolak perbuatan tercela meskipun ditekan kawan.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">check</span>
+<span>Berani melapor kepada guru saat melihat aksi perundungan (bullying).</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">check</span>
+<span>Berani menolak ajakan kawan untuk membolos atau merokok.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-error text-[16px] mt-0.5">check</span>
+<span>Berani meminta maaf secara terbuka saat menyadari berbuat keliru.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #29, #77, #93</span>
+<span class="text-error font-bold">Dilema Etika #7</span>
+</div>
+</div>
+<!-- Nilai 8: PEDULI -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">08</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-primary font-extrabold">Peduli</h3>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Empati</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Sikap memperhatikan dan bertindak proaktif terhadap kondisi sesama manusia dan kelestarian alam sekitar.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Membantu teman yang terjatuh di lapangan upacara.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Meminjamkan alat tulis cadangan kepada kawan yang membutuhkan.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5">check</span>
+<span>Memungut sampah yang berserakan dan membuang ke tempatnya.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #09, #50, #84</span>
+<span class="text-primary font-bold">Dilema Etika #8</span>
+</div>
+</div>
+<!-- Nilai 9: ADIL -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-lg flex flex-col justify-between shadow-sm hover:shadow-md transition-all group">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[28px]">balance</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-outline-variant font-black">09</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-secondary font-extrabold">Adil</h3>
+<span class="px-2 py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Keseimbangan</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Menempatkan sesuatu pada tempatnya, memperlakukan orang lain secara objektif tanpa pilih kasih atau diskriminasi.
+              </p>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Penerapan Nyata di Sekolah:</span>
+<ul class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Membagi giliran bermain game papan atau olahraga secara merata.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Tidak memihak sahabat karib saat terjadi perselisihan kelas.</span>
+</li>
+<li class="flex items-start gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px] mt-0.5">check</span>
+<span>Memberi porsi peran yang setara dalam kerja piket kelas.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>Petak Terkait: #22, #65, #98</span>
+<span class="text-secondary font-bold">Dilema Etika #9</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: FAQ & Panduan Khusus Guru / Fasilitator (Accordion) -->
+<section class="w-full py-space-2xl bg-surface-container-low" id="pedoman-pdf">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col gap-space-xl">
+<!-- Top Title and Download Banner -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">co_present</span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-bold">Panduan Fasilitator &amp; Guru</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Kiat Mengajar &amp; Tanya Jawab (FAQ)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Panduan metodologis bagi pendidik dalam mengintegrasikan KUMBARA ke dalam Projek Penguatan Profil Pelajar Pancasila (P5), jam bimbingan konseling, maupun ekstrakurikuler kepemimpinan.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-space-xs bg-surface-container-lowest p-space-md rounded-2xl shadow-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[32px]">picture_as_pdf</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Buku Panduan Guru v2.4</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Format PDF • 24 Halaman • 4.2 MB</span>
+</div>
+</div>
+<button class="w-full mt-2 py-2.5 px-4 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-[0_3px_0_#005137] active:translate-y-0.5 active:shadow-none hover:bg-primary-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>Unduh RPP &amp; Rubrik Nilai</span>
+</button>
+</div>
+</div>
+<!-- Interactive FAQ Accordion List -->
+<div class="flex flex-col gap-space-sm" id="kumbara-faq-container">
+<!-- Accordion Item 1 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm transition-all faq-card cursor-pointer">
+<div class="flex items-center justify-between gap-space-md faq-trigger">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">record_voice_over</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bagaimana memimpin diskusi refleksi pasca permainan agar siswa terbuka?</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant faq-icon transition-transform">expand_more</span>
+</div>
+<div class="faq-content hidden pt-space-md mt-space-md border-t border-outline-variant/10 text-on-surface-variant font-body-md text-body-md">
+            Gunakan pendekatan <em>Debriefing 3-Tahap (What - So What - Now What)</em>:
+            <ol class="list-decimal pl-5 mt-2 space-y-1.5">
+<li><strong>What (Apa yang dialami):</strong> Tanyakan perasaan siswa saat tergelincir ular korupsi atau berhasil naik tangga kebajikan. Biarkan mereka menceritakan kembali dilema yang dihadapi.</li>
+<li><strong>So What (Makna):</strong> Hubungkan situasi dalam petak dengan pengalaman nyata di sekolah (misal: "Apakah kamu pernah melihat teman ragu-ragu mengembalikan pensil yang dipinjam?").</li>
+<li><strong>Now What (Tindakan Nyata):</strong> Minta setiap siswa menuliskan 1 komitmen integritas kecil di lembar refleksi yang akan dipraktikkan selama sepekan ke depan.</li>
+</ol>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm transition-all faq-card cursor-pointer">
+<div class="flex items-center justify-between gap-space-md faq-trigger">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">tv</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bagaimana menggunakan mode proyektor di ruang kelas besar?</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant faq-icon transition-transform">expand_more</span>
+</div>
+<div class="faq-content hidden pt-space-md mt-space-md border-t border-outline-variant/10 text-on-surface-variant font-body-md text-body-md">
+            Pendidik dapat membuka halaman <strong>Arena Permainan</strong> melalui laptop yang tersambung proyektor LCD. Bagi kelas menjadi 4 kelompok besar mewakili 4 warna bidak (Merah, Biru, Emas, Hijau). Setiap giliran kelompok, satu juru bicara melempar dadu digital dan seluruh anggota kelompok berdiskusi selama 30 detik untuk menentukan jawaban atas kartu dilema moral yang muncul.
+          </div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm transition-all faq-card cursor-pointer">
+<div class="flex items-center justify-between gap-space-md faq-trigger">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-tertiary/10 text-tertiary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">fact_check</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bagaimana cara menilai aspek afektif siswa dari hasil permainan?</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant faq-icon transition-transform">expand_more</span>
+</div>
+<div class="faq-content hidden pt-space-md mt-space-md border-t border-outline-variant/10 text-on-surface-variant font-body-md text-body-md">
+            Penilaian tidak ditekankan semata-mata pada siapa yang pertama kali tiba di petak 100, melainkan pada:
+            <ul class="list-disc pl-5 mt-2 space-y-1">
+<li><strong>Rasio Poin Integritas:</strong> Ketepatan nalar moral saat menjawab tantangan Tangga Kebajikan dan Ular Korupsi.</li>
+<li><strong>Sikap Sportivitas:</strong> Menghormati giliran bermain, tidak marah saat tergelincir, dan mendukung teman satu meja.</li>
+<li><strong>Kedalaman Lembar Refleksi:</strong> Kejujuran siswa dalam mengevaluasi perilaku diri sendiri pasca sesi main.</li>
+</ul>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="bg-surface-container-lowest rounded-2xl p-space-md shadow-sm transition-all faq-card cursor-pointer">
+<div class="flex items-center justify-between gap-space-md faq-trigger">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-xl bg-error/10 text-error flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">extension</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Apakah soal dilema dapat disesuaikan dengan tingkatan kelas (SD vs SMP vs SMA)?</h4>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant faq-icon transition-transform">expand_more</span>
+</div>
+<div class="faq-content hidden pt-space-md mt-space-md border-t border-outline-variant/10 text-on-surface-variant font-body-md text-body-md">
+            Ya! Di menu atas (Navbar App Shell), terdapat pemilih jenjang: <strong>SD Kelas 1-3, SD Kelas 4-6, SMP, dan SMA</strong>. Bank soal dilema dan kartu refleksi akan secara otomatis berganti tingkat kompleksitas kasusnya, mulai dari urusan bekal dan mainan (SD) hingga isu gratifikasi, integritas organisasi OSIS, dan hoaks pemilu sekolah (SMA).
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Pengembang & Kutipan Inspiratif Karakter -->
+<section class="w-full py-space-2xl bg-surface relative overflow-hidden">
+<div class="max-w-5xl mx-auto px-margin md:px-margin-desktop flex flex-col items-center text-center gap-space-lg relative z-10">
+<!-- Developer Badge with Glow -->
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-bold shadow-md">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+<span>Karya Orisinal • Inisiatif Pembelajaran Karakter @wea_aew</span>
+</div>
+<!-- Inspirational Quote -->
+<blockquote class="font-headline-lg text-headline-lg text-on-surface max-w-3xl leading-snug font-extrabold">
+        “Integritas bukanlah bakat yang dibawa sejak lahir, melainkan kebiasaan kecil yang dipilih setiap hari saat tidak ada orang lain yang memperhatikan.”
+      </blockquote>
+<div class="flex flex-col items-center gap-1">
+<span class="font-label-lg text-label-lg text-primary font-bold">Tim Pengembang Karakter KUMBARA</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Menyemai Benih Kejujuran Generasi Emas Indonesia 2045</span>
+</div>
+<!-- Quick Exploration Jump -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm pt-space-md">
+<button class="px-6 py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md font-bold shadow-[0_3px_0_#005137] active:translate-y-0.5 active:shadow-none hover:bg-primary-container transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+<span>Buka Papan Arena 100 Petak</span>
+</button>
+<button class="px-6 py-3 rounded-xl bg-surface-container text-on-surface font-label-md text-label-md font-bold hover:bg-surface-container-high transition-all flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">leaderboard</span>
+<span>Lihat Papan Peringkat Siswa</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+<!-- Inline Interaction Script for FAQ Accordions -->
+<script>
+  (function() {
+    const faqCards = document.querySelectorAll('#kumbara-faq-container .faq-card');
+    faqCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const content = card.querySelector('.faq-content');
+        const icon = card.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close other FAQs
+        faqCards.forEach(other => {
+          if (other !== card) {
+            other.querySelector('.faq-content').classList.add('hidden');
+            other.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+          }
+        });
+
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.style.transform = 'rotate(180deg)';
+        } else {
+          content.classList.add('hidden');
+          icon.style.transform = 'rotate(0deg)';
+        }
+      });
+    });
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-md border-b border-outline-variant/20 pb-space-lg"><div class="flex flex-col"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-extrabold">KUMBARA</span><span class="font-label-sm text-label-sm text-on-surface-variant">| Media Edukasi Karakter &amp; Antikorupsi</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-2xl">Menginternalisasi 9 Nilai Integritas KPK: Jujur, Tanggung Jawab, Disiplin, Mandiri, Kerja Keras, Sederhana, Berani, Peduli, dan Adil melalui petualangan board game interaktif 100 petak.</p></div><div class="flex flex-wrap items-center gap-space-xs"><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="beranda-&amp;-pemilihan-level---kumbara-integritas" href="#">Beranda</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="arena-permainan---papan-ular-tangga-integritas" href="#">Arena 100 Petak</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="panduan-aturan-&amp;-9-nilai-integritas---kumbara" href="#">9 Nilai Integritas</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="papan-peringkat-&amp;-prestasi-siswa---kumbara" href="#">Papan Peringkat</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="modul-evaluasi-&amp;-refleksi---kumbara-integritas" href="#">Evaluasi &amp; Refleksi</a><span class="text-outline-variant">•</span><a class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-all px-2 py-1 rounded" data-path="admin-basis-data-&amp;-konfigurasi---kumbara-integritas" href="#">Admin Basis Data</a></div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Karya @wea_aew</span><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 KUMBARA Integritas. Hak Cipta Dilindungi.</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><span>Jenjang: SD • SMP • SMA</span><span class="text-outline-variant">|</span><span>Versi Modul 2.4</span></div></div></div></footer></body></html>

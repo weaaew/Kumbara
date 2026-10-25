@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>KUMBARA - Petualangan Integritas</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-high":"#dce9ff","inverse-on-surface":"#eaf1ff","inverse-surface":"#233144","secondary-container":"#fe932c","on-secondary-container":"#663500","on-surface-variant":"#3d4a42","on-error-container":"#93000a","surface-container-low":"#eff4ff","on-secondary-fixed-variant":"#6e3900","surface-dim":"#ccdbf3","on-surface":"#0d1c2e","error":"#ba1a1a","surface-variant":"#d5e3fc","outline-variant":"#bccac0","surface-container-highest":"#d5e3fc","tertiary-fixed":"#cce5ff","on-primary-container":"#f5fff7","on-tertiary-container":"#fdfcff","error-container":"#ffdad6","on-error":"#ffffff","surface-container-lowest":"#ffffff","surface-tint":"#006c4a","primary-fixed-dim":"#68dba9","secondary":"#904d00","primary-container":"#00855d","tertiary-container":"#007bb9","on-primary-fixed":"#002114","surface-container":"#e6eeff","on-tertiary-fixed":"#001d31","on-primary":"#ffffff","surface-bright":"#f8f9ff","on-tertiary-fixed-variant":"#004b73","on-secondary":"#ffffff","on-tertiary":"#ffffff","secondary-fixed":"#ffdcc3","primary":"#006948","surface":"#f8f9ff","outline":"#6d7a72","background":"#f8f9ff","primary-fixed":"#85f8c4","inverse-primary":"#68dba9","tertiary":"#006194","secondary-fixed-dim":"#ffb77d","on-secondary-fixed":"#2f1500","on-background":"#0d1c2e","on-primary-fixed-variant":"#005137","tertiary-fixed-dim":"#93ccff"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{margin:"1rem","space-xs":"0.25rem",gutter:"1rem","space-sm":"0.5rem","margin-tablet":"1.5rem","space-lg":"1.5rem","gutter-desktop":"1.5rem","space-md":"1rem","margin-desktop":"2rem","space-xl":"2rem","space-2xl":"3rem"},fontFamily:{"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-md":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},fontSize:{"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"headline-lg-mobile":["24px",{lineHeight:"32px",fontWeight:"700"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"500"}],"headline-sm":["20px",{lineHeight:"28px",fontWeight:"700"}],"label-md":["14px",{lineHeight:"20px",fontWeight:"700"}],"display-hero-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"800"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.01em",fontWeight:"700"}],"display-hero":["48px",{lineHeight:"56px",letterSpacing:"-0.02em",fontWeight:"800"}],"label-lg":["16px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"700"}],"label-sm":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"700"}],"headline-md":["24px",{lineHeight:"32px",fontWeight:"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><img alt="Kumbara Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV3uc8FLyUHWFn9Q0hFOpPGTsmVNygGCWgqi5veDBmfTJ4NAyP_Xn2vbsL8NvFs5I9YU9Wv8TMrFoEnbpK6AeSw-oJ94usCEaANEEA1hPKYmYWNz5bGYFoFwedpCGs0O8dcnbktMOuC__AE_kN_1ygwwh7lu2n3qlq09hlTX0dgZ2iPFcWod1i00xQZEXck6VTd5sTg0J0Jd23YtN77XvSAXLYRZDDMUyZ7omX2ZrETgeA-LMJKxY3Fw"/><div class="flex flex-col justify-center min-w-0"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-extrabold">KUMBARA</span><span class="hidden lg:inline-flex items-center px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold shadow-sm">Karya @wea_aew</span></div><span class="hidden sm:block font-label-sm text-label-sm text-on-surface-variant truncate">Karakter Utuh Mandiri, Berani, Adil, Rajin, &amp; Amanah</span></div></div><div class="hidden xl:flex items-center gap-space-xs p-1 bg-surface-container rounded-full"><button class="px-3 py-1 rounded-full font-label-sm text-label-sm font-bold bg-primary text-on-primary transition-all shadow-sm" type="button">SD Kelas 1-3</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SD Kelas 4-6</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMP</button><button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-all" type="button">SMA Sederajat</button></div><div class="flex items-center gap-space-sm flex-shrink-0"><button aria-label="BGM dan SFX Audio" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container-high transition-all font-label-sm text-label-sm shadow-[0_2px_0_#bccac0] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px] text-primary">volume_up</span><span class="hidden md:inline font-bold">Audio</span></button><button aria-label="Reset Permainan" class="flex items-center gap-1.5 px-3 py-2 rounded-xl bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-sm text-label-sm shadow-[0_2px_0_#ba1a1a] active:translate-y-0.5 active:shadow-none" type="button"><span class="material-symbols-outlined text-[18px]">restart_alt</span><span class="hidden md:inline font-bold">Reset</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-low border-t border-outline-variant/20 shadow-[0_2px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop overflow-x-auto"><nav class="flex items-center gap-space-xs py-2 min-w-max" data-active-classes="bg-primary-container text-on-primary-container font-bold shadow-sm rounded-lg"><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="arena-permainan" href="#">Arena Permainan</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="bank-soal-integritas" href="#">Bank Soal Integritas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="papan-peringkat-&amp;-skor" href="#">Papan Peringkat &amp; Skor</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="aturan-&amp;-nilai-integritas" href="#">Aturan &amp; Nilai Integritas</a><a class="px-3 py-1.5 font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded-lg transition-all" data-path="evaluasi-&amp;-refleksi" href="#">Evaluasi &amp; Refleksi</a></nav></div></div></header><main class="w-full pt-32 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Top Highlight: Hero Section -->
+<section class="relative w-full overflow-hidden bg-surface-container-low px-margin md:px-margin-desktop py-space-xl">
+<!-- Ambient glowing backdrop blobs -->
+<div class="absolute -top-24 -left-20 w-96 h-96 bg-primary-fixed/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -right-20 w-80 h-80 bg-secondary-fixed/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-space-xl relative z-10">
+<!-- Left Hero Typography & Actions -->
+<div class="flex-1 flex flex-col items-start gap-space-md">
+<!-- Badges row -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            9 Nilai Integritas KPK
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[16px]">star</span>
+            Karya @wea_aew
+          </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">groups</span>
+            2-4 Pemain / AI Cerdas
+          </span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight">
+            Petualangan <span class="text-primary underline decoration-secondary-container decoration-wavy decoration-2">Integritas</span> &amp; Karakter Bangsa.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Permainan papan digital ular tangga modern penanam 9 nilai antikorupsi: Jujur, Tanggung Jawab, Disiplin, Mandiri, Kerja Keras, Sederhana, Berani, Peduli, dan Adil. Dirancang adaptif untuk pembentukan moral generasi emas Indonesia.
+          </p>
+</div>
+<!-- Quick CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_0_#005137] hover:brightness-110 active:translate-y-1 active:shadow-none transition-all" href="#level-selection">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+            Mulai Main Cepat (Quick Play)
+          </a>
+<button class="flex items-center gap-2 px-5 py-3.5 rounded-xl bg-surface-container text-primary font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-all" id="btn-guide-modal" type="button">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+            Panduan &amp; Nilai Integritas
+          </button>
+</div>
+<!-- 9 Core Values Micro-bar -->
+<div class="w-full pt-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant block mb-2">9 Pilar Karakter Kumbara:</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">1. Jujur</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">2. Tanggung Jawab</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">3. Disiplin</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">4. Mandiri</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">5. Kerja Keras</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">6. Sederhana</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">7. Berani</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">8. Peduli</span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm">9. Adil</span>
+</div>
+</div>
+</div>
+<!-- Right Visual Board Hero Preview Bento -->
+<div class="w-full lg:w-[460px] flex flex-col gap-space-sm flex-shrink-0">
+<div class="relative w-full rounded-2xl bg-surface-container p-space-md shadow-xl overflow-hidden flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<span class="font-label-md text-label-md text-on-surface">Papan Petualangan Aktif</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-primary font-label-sm text-label-sm font-bold shadow-sm">100 Petak Pintar</span>
+</div>
+<!-- Board Thumbnail Showcase -->
+<div class="relative w-full h-56 rounded-xl overflow-hidden shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Vibrant 3D board game mockup showcasing 100 tiles snakes and ladders with colorful animal tokens like cheerful deer and smart eagle on bright mint green and warm sunny yellow gradient surface, surrounded by cheerful Indonesian school students playing together in a bright classroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIivdupJNotRLlzeLhqESdi36_rxYZ5lLnKuhN6HIy2-NHKK2uukKG0fZlHEMHWnyTy_8ipQk7xnOdqNj3xkU8dM-f1H21c3koCDxmC26rjq5KIX4CSj2XZFXs6I7GRkEH2lGaNWRwAoan1pDY6DJ7OjUXDBdxwCE-aRif7s4NQjv4OpzPzjgA7IFr1k8b3ctpp9XETTNHhRbfUVNgV5RbiWM1QjvWiNz2B3ahGf9-Mczkbmmb3297VA"/>
+<!-- Floating Live Token Badges -->
+<div class="absolute bottom-3 left-3 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface/90 backdrop-blur-md shadow-md text-on-surface font-label-sm text-label-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+              Giliran: Kancil Ceria (Petak 42)
+            </div>
+<div class="absolute top-3 right-3 flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-md font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">stairs</span>
+              Tangga Kejujuran!
+            </div>
+</div>
+<!-- Quick Stat Grid -->
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="p-space-xs rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">200+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Skenario Soal</span>
+</div>
+<div class="p-space-xs rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tingkat Usia</span>
+</div>
+<div class="p-space-xs rounded-xl bg-surface-container-lowest shadow-sm flex flex-col">
+<span class="font-headline-sm text-headline-sm text-tertiary">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Edukasi Moral</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Tier / Level Selection Section (Core Focus) -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-desktop py-space-2xl" id="level-selection">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-xl">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="w-2 h-6 bg-primary rounded-full"></span>
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary">Pilihan Fase Pembelajaran</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Pilih Tingkat &amp; Jenjang Pendidikan</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Skenario dilema moral, kosakata, serta kompleksitas rintangan disesuaikan secara khusus untuk setiap jenjang.</p>
+</div>
+<!-- Quick Filter / Toggle info -->
+<div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm self-start md:self-auto shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">tune</span>
+        Tingkat kesulitan dapat diubah kapan saja di arena
+      </div>
+</div>
+<!-- 4 Level Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-lg items-stretch">
+<!-- LEVEL 1: SD 1-3 -->
+<div class="tier-card group relative flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" data-tier="1">
+<div class="flex flex-col gap-space-md">
+<!-- Card Header & Badge -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+              Level 1 • Pemula
+            </span>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              10-15 mnt
+            </span>
+</div>
+<!-- Mascot Artwork Placeholder -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Charming 3D rendered cartoon beetle Kumbang Cilik and playful deer Kancil Ceria wearing tiny explorer hats with honest shiny eyes in a sunny elementary playground with green trees and flowers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjiP_lCBlBgDzxLUP8w9Tewy2nrpteBCauDQi6UWNoeOXWRApf3CyPV1CDVBw17GinPDe_YeOB27ffpQj8J0U8BFedgUhmsDzEzZUynvIRwmZEREomiARTzDT-MIAvOsx_hqkhJJfF6zJU67_sSEuA3asnfwwumUeuKBcBuP3CL-96h7r87vPVD0t9Dmwk91eaoLMDC1FqMv8L7fcHM4qmO9kUXb_s-aiv0JPjye2FAPowb7m6R_G9VQ"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+              Bidak: Kumbang &amp; Kancil
+            </div>
+</div>
+<!-- Title & School Target -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">SD Kelas 1 - 3 (Fase A/B)</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Prajurit Cilik Integritas</h3>
+</div>
+<!-- Focus & Scenarios -->
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Fokus Pembelajaran:</p>
+<ul class="space-y-1.5 pl-4 list-disc marker:text-primary">
+<li>Kejujuran sederhana di rumah &amp; kelas</li>
+<li>Tidak berbohong kepada orang tua/guru</li>
+<li>Mengembalikan barang temuan teman</li>
+<li>Meminta izin sebelum meminjam barang</li>
+</ul>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-space-md mt-space-sm border-t border-surface-container">
+<button class="btn-select-tier w-full py-3 rounded-xl bg-surface-container-high text-primary font-label-md text-label-md group-hover:bg-primary group-hover:text-on-primary shadow-sm group-hover:shadow-[0_3px_0_#005137] transition-all flex items-center justify-center gap-1.5" type="button">
+<span>Pilih Level 1</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- LEVEL 2: SD 4-6 (Recommended / Highlighted) -->
+<div class="tier-card active-tier relative flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-xl hover:shadow-2xl transition-all duration-300 -translate-y-1 ring-2 ring-primary cursor-pointer" data-tier="2">
+<!-- Floating Recommendation Tag -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-extrabold shadow-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">military_tech</span>
+          Rekomendasi Utama
+        </div>
+<div class="flex flex-col gap-space-md pt-2">
+<!-- Card Header & Badge -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">
+              Level 2 • Menengah
+            </span>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              15-20 mnt
+            </span>
+</div>
+<!-- Mascot Artwork Placeholder -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heroic 3D cute eagle Elang Waspada with sharp alert eyes and energetic swift deer Rusa Sigap holding a magnifying glass investigating integrity puzzles in a vibrant school library" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ351A_PD3_IQ7Cv5CnMdTvoA3QO9sBVa_6kk2lci_25_KpwhFUreE8oQdUnJZkhtd-zWfI8DQfhUsKzAe92q7nZEjCLA-a8cLWOACy5itrZdkhprWkRXUtLc-IES34Az93IqzLAjpZizdsJZ2YcBnv_mBIV2O_Mwgrq5VVixFEQ4BYA66FKM-O0TxejNvy6JISF6KAcEx7pSU892q3b2UZFJuMKYwMRxk2mIy8VaAUooMt0SLIB2k0A"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+              Bidak: Elang &amp; Rusa
+            </div>
+</div>
+<!-- Title & School Target -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold">SD Kelas 4 - 6 (Fase B/C)</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Penjelajah Kejujuran</h3>
+</div>
+<!-- Focus & Scenarios -->
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Fokus Pembelajaran:</p>
+<ul class="space-y-1.5 pl-4 list-disc marker:text-secondary">
+<li>Tanggung jawab mengelola uang saku</li>
+<li>Menolak ajakan menyontek ujian</li>
+<li>Sportivitas bermain &amp; menerima kekalahan</li>
+<li>Disiplin jadwal piket kebersihan kelas</li>
+</ul>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-space-md mt-space-sm border-t border-surface-container">
+<button class="btn-select-tier w-full py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_0_#005137] hover:brightness-110 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-1.5" type="button">
+<span>Pilih Level 2 (Aktif)</span>
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</button>
+</div>
+</div>
+<!-- LEVEL 3: SMP -->
+<div class="tier-card group relative flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" data-tier="3">
+<div class="flex flex-col gap-space-md">
+<!-- Card Header & Badge -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-tertiary font-label-sm text-label-sm font-bold">
+              Level 3 • Menantang
+            </span>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              20-25 mnt
+            </span>
+</div>
+<!-- Mascot Artwork Placeholder -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Stylized 3D teenage student avatars dressed in clean Indonesian junior high school uniform navy blue and white, standing proudly with shields of justice, modern clean anime style with dynamic soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALFSwfK93HzmmQWgOqbhYexlyN9IEIzJKqY3XyRfOSmGD877FLCS9BYrfYStcGqCXRG_WBLFBeqBbH2UWMVlQ54_JfJ0Sp-Urx8pJ-o1i9OY2lw-2Rtogh0zmzCo1vHg0aD0bMH2_AT6NMrehfAO-QYC6bUWuUl8n7TwmXpK7VrkfLB6BdaBdeWAiEmS6LG8N6UOkiRFgkBXTqUMVIZEa0ThncLLoqMAvCGof3xi18VfJKOqoVia-3Mg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+              Bidak: Ksatria Berani &amp; Adil
+            </div>
+</div>
+<!-- Title & School Target -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-bold">SMP / MTs Sederajat</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Ksatria Keadilan</h3>
+</div>
+<!-- Focus & Scenarios -->
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Fokus Pembelajaran:</p>
+<ul class="space-y-1.5 pl-4 list-disc marker:text-tertiary">
+<li>Kejujuran organisasi OSIS &amp; ekstrakurikuler</li>
+<li>Keberanian melawan perundungan (anti-bullying)</li>
+<li>Menolak titip absen &amp; tugas kelompok pasif</li>
+<li>Transparansi pembukuan kas kelas</li>
+</ul>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-space-md mt-space-sm border-t border-surface-container">
+<button class="btn-select-tier w-full py-3 rounded-xl bg-surface-container-high text-tertiary font-label-md text-label-md group-hover:bg-tertiary group-hover:text-on-tertiary shadow-sm group-hover:shadow-[0_3px_0_#004b73] transition-all flex items-center justify-center gap-1.5" type="button">
+<span>Pilih Level 3</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- LEVEL 4: SMA / SMK / Mahasiswa -->
+<div class="tier-card group relative flex flex-col justify-between rounded-2xl bg-surface-container-lowest p-space-lg shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer" data-tier="4">
+<div class="flex flex-col gap-space-md">
+<!-- Card Header & Badge -->
+<div class="flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
+              Level 4 • Mahir
+            </span>
+<span class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+              25-30 mnt
+            </span>
+</div>
+<!-- Mascot Artwork Placeholder -->
+<div class="relative w-full h-40 rounded-xl overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sophisticated 3D isometric representation of high school youth leaders and young professionals standing around an interactive holographic table with accountability charts and anti corruption scales of justice, warm teal and gold ambient glow" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8ZLYSAj5QxudcCKrYkbBgv7fj9xIjtWOFd5zzo_kTNjL4w5lgI1haWRfbNhWku7I7hCOFsdKGNB6mJ8Bs8O9V_ViPzBowcO1VQcSifYvn7NDZjZztSOVWJYFnNjUhtnZQVrUmR5M1EFql8uaCCIGSLfR15wY5mcXw_pTYvf7n7_QbcTUu7ePLyPfjA_Y3v94OMVHussqnV8SYwzOxjRRq0bL7or5jzycaUunbSQPjQVUpIMbEE0SdEg"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+              Bidak: Garda Integritas Tinggi
+            </div>
+</div>
+<!-- Title & School Target -->
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">SMA / SMK / Mahasiswa / Umum</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Garda Pemimpin Amanah</h3>
+</div>
+<!-- Focus & Scenarios -->
+<div class="flex flex-col gap-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Fokus Pembelajaran:</p>
+<ul class="space-y-1.5 pl-4 list-disc marker:text-primary">
+<li>Pengadaan dana kegiatan &amp; nota fiktif</li>
+<li>Benturan kepentingan &amp; gratifikasi hadiah</li>
+<li>Integritas pelaporan berani (Whistleblowing)</li>
+<li>Etika digital &amp; akuntabilitas anggaran publik</li>
+</ul>
+</div>
+</div>
+<!-- Action CTA -->
+<div class="pt-space-md mt-space-sm border-t border-surface-container">
+<button class="btn-select-tier w-full py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md group-hover:bg-inverse-surface group-hover:text-inverse-on-surface shadow-sm group-hover:shadow-[0_3px_0_#0d1c2e] transition-all flex items-center justify-center gap-1.5" type="button">
+<span>Pilih Level 4</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Game Setup & Configuration Preview Dock Panel -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-desktop mb-space-2xl">
+<div class="rounded-3xl bg-surface-container p-space-lg md:p-space-xl shadow-xl flex flex-col lg:flex-row items-center justify-between gap-space-xl relative overflow-hidden">
+<!-- Background subtle gradient decor -->
+<div class="absolute -right-16 -bottom-16 w-64 h-64 bg-primary-fixed/40 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Setup Controls Left -->
+<div class="flex-1 flex flex-col gap-space-md w-full">
+<div class="flex items-center gap-space-xs">
+<span class="p-2 rounded-xl bg-primary text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[24px]">sports_esports</span>
+</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Konfigurasi Pertandingan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sesuaikan jumlah pemain dan mode lawan sebelum meluncur ke arena papan.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md pt-space-xs">
+<!-- Player Count Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">group</span>
+              Jumlah Pemain Bidak:
+            </label>
+<div class="grid grid-cols-3 gap-2" id="player-count-group">
+<button class="player-btn py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" data-count="2" type="button">
+                2 Pemain
+              </button>
+<button class="player-btn py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-high transition-all" data-count="3" type="button">
+                3 Pemain
+              </button>
+<button class="player-btn active-btn py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_2px_0_#005137] transition-all" data-count="4" type="button">
+                4 Pemain
+              </button>
+</div>
+</div>
+<!-- Opponent Mode Selector -->
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px] text-primary">smart_toy</span>
+              Mode Permainan:
+            </label>
+<div class="grid grid-cols-2 gap-2" id="mode-group">
+<button class="mode-btn active-btn py-2.5 px-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm text-center shadow-[0_2px_0_#005137] transition-all flex items-center justify-center gap-1" data-mode="local" type="button">
+<span class="material-symbols-outlined text-[16px]">touch_app</span>
+                Lokal 1 Layar
+              </button>
+<button class="mode-btn py-2.5 px-2 rounded-xl bg-surface-container-lowest text-on-surface font-label-sm text-label-sm text-center shadow-sm hover:bg-surface-container-high transition-all flex items-center justify-center gap-1" data-mode="ai" type="button">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+                Lawan Bot AI
+              </button>
+</div>
+</div>
+</div>
+<!-- Token Roster Preview -->
+<div class="flex items-center gap-3 pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bidak di Meja:</span>
+<div class="flex items-center -space-x-1.5">
+<div class="w-8 h-8 rounded-full bg-error text-on-error flex items-center justify-center shadow-md font-label-sm text-label-sm font-bold ring-2 ring-surface">P1</div>
+<div class="w-8 h-8 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-md font-label-sm text-label-sm font-bold ring-2 ring-surface">P2</div>
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-md font-label-sm text-label-sm font-bold ring-2 ring-surface">P3</div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md font-label-sm text-label-sm font-bold ring-2 ring-surface">P4</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold ml-2">Level Terpilih: SD 4-6 (Penjelajah Kejujuran)</span>
+</div>
+</div>
+<!-- Action Button Launcher Right -->
+<div class="w-full lg:w-auto flex flex-col items-center sm:items-stretch gap-space-xs flex-shrink-0">
+<a class="flex items-center justify-center gap-3 px-8 py-5 rounded-2xl bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_6px_0_#005137] hover:brightness-110 active:translate-y-1.5 active:shadow-[0_1px_0_#005137] transition-all text-center" data-path="arena-permainan" href="#" id="btn-enter-arena">
+<span class="material-symbols-outlined text-[32px]">swords</span>
+<span>Masuk Arena Papan 100 Petak</span>
+</a>
+<span class="text-center font-label-sm text-label-sm text-on-surface-variant flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">bolt</span>
+          Bisa langsung dimainkan tanpa unduh aplikasi
+        </span>
+</div>
+</div>
+</section>
+<!-- Mutiara Integritas & Fitur Edukatif Showcase -->
+<section class="w-full bg-surface-container-low py-space-2xl px-margin md:px-margin-desktop">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-xl">
+<!-- Quote Card / Mutiara Integritas -->
+<div class="w-full rounded-2xl bg-surface-container-lowest p-space-lg md:p-space-xl shadow-md flex flex-col md:flex-row items-center gap-space-lg">
+<div class="w-16 h-16 rounded-2xl bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[36px]">lightbulb</span>
+</div>
+<div class="flex-1 flex flex-col gap-1 text-center md:text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Mutiara Integritas Hari Ini</span>
+<blockquote class="font-headline-sm text-headline-sm text-on-surface italic">
+            “Integritas adalah melakukan hal yang benar, bahkan ketika tidak ada seorang pun yang sedang melihatmu.”
+          </blockquote>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium mt-1">C.S. Lewis • Ditanamkan dalam Petualangan Kumbara Karya @wea_aew</span>
+</div>
+<div class="flex-shrink-0">
+<button aria-label="Ganti Mutiara Integritas" class="p-3 rounded-xl bg-surface-container text-on-surface hover:bg-surface-container-high transition-all shadow-sm" id="btn-next-quote" type="button">
+<span class="material-symbols-outlined text-[20px]">autorenew</span>
+</button>
+</div>
+</div>
+<!-- 3 Feature Columns -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Feature 1 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">stairs</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Tangga Kebajikan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Pemain melesat naik tinggi saat mendarat di petak tindakan terpuji seperti mengembalikan uang lebih kasir atau membela teman yang dizalimi.
+          </p>
+</div>
+<!-- Feature 2 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">warning</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Jebakan Ular Korupsi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Tergelincir turun ke petak bawah saat memilih perbuatan curang atau manipulatif. Disertai kartu refleksi edukatif agar belajar dari kekeliruan moral.
+          </p>
+</div>
+<!-- Feature 3 -->
+<div class="flex flex-col gap-space-sm p-space-lg rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">psychology_alt</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Bank Soal Dilema Nyata</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            200+ pertanyaan interaktif pilihan ganda kontekstual sesuai usia dengan pembahasan komprehensif berstandar nilai integritas KPK RI.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Panduan 9 Nilai Integritas (Hidden by default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm hidden opacity-0 transition-opacity duration-300" id="guide-modal">
+<div class="relative w-full max-w-3xl max-h-[90vh] flex flex-col rounded-3xl bg-surface-container-lowest shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container flex items-center justify-between border-b border-surface-container-highest">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-xl bg-primary text-on-primary">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">9 Nilai Integritas Antikorupsi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pedoman panduan karakter permainan KUMBARA (Karya @wea_aew)</p>
+</div>
+</div>
+<button aria-label="Tutup Dialog" class="p-2 rounded-full text-on-surface-variant hover:bg-surface-container-high transition-all" id="btn-close-modal" type="button">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<!-- Modal Content Scrollable -->
+<div class="p-space-lg overflow-y-auto space-y-space-md">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary">1. Jujur</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Lurus hati, tidak curang, berkata apa adanya, dan tidak berbohong dalam situasi apa pun.</p>
+</div>
+<!-- 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary">2. Tanggung Jawab</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menyelesaikan tugas dengan tuntas dan berani menanggung konsekuensi atas perbuatan.</p>
+</div>
+<!-- 3 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-primary">3. Disiplin</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Menghargai waktu, taat pada aturan bersama, dan konsisten mematuhi kesepakatan.</p>
+</div>
+<!-- 4 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary">4. Mandiri</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tidak mudah bergantung pada orang lain saat mampu menyelesaikan pekerjaan sendiri.</p>
+</div>
+<!-- 5 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary">5. Kerja Keras</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pantang menyerah meraih cita-cita tanpa mengambil jalan pintas atau cara curang.</p>
+</div>
+<!-- 6 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-secondary">6. Sederhana</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bergaya hidup wajar, bersyukur, serta membedakan antara kebutuhan vs keinginan semata.</p>
+</div>
+<!-- 7 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-tertiary">7. Berani</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Percaya diri membela kebenaran, menolak kecurangan, dan mengakui kesalahan diri.</p>
+</div>
+<!-- 8 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-tertiary">8. Peduli</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Memperhatikan sesama, tolong-menolong, dan tanggap terhadap lingkungan sekitar.</p>
+</div>
+<!-- 9 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-1">
+<span class="font-label-md text-label-md text-tertiary">9. Adil</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Tidak berat sebelah, memperlakukan setiap orang secara setara sesuai haknya.</p>
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant">KUMBARA • Petualangan Integritas Anak Bangsa</span>
+<button class="px-5 py-2.5 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:brightness-110 transition-all" id="btn-understood" type="button">
+          Saya Paham &amp; Siap Main
+        </button>
+</div>
+</div>
+</div>
+<!-- Interactive Logic for Level Selection & Setup Preview -->
+<script>
+    (function initKumbaraLanding() {
+      // Level Card Interactive Selection
+      const tierCards = document.querySelectorAll('.tier-card');
+      const tokenLevelText = document.querySelector('.pt-space-xs .text-primary.font-bold');
+
+      const tierNames = {
+        '1': 'SD 1-3 (Prajurit Cilik Integritas)',
+        '2': 'SD 4-6 (Penjelajah Kejujuran)',
+        '3': 'SMP (Ksatria Keadilan)',
+        '4': 'SMA/SMK (Garda Pemimpin Amanah)'
+      };
+
+      tierCards.forEach(card => {
+        card.addEventListener('click', () => {
+          tierCards.forEach(c => {
+            c.classList.remove('active-tier', 'ring-2', 'ring-primary', '-translate-y-1');
+            const btn = c.querySelector('.btn-select-tier');
+            if (btn) {
+              const tierId = c.dataset.tier;
+              btn.innerHTML = `<span>Pilih Level ${tierId}</span><span class="material-symbols-outlined text-[18px]">arrow_forward</span>`;
+              btn.className = 'btn-select-tier w-full py-3 rounded-xl bg-surface-container-high text-on-surface font-label-md text-label-md shadow-sm transition-all flex items-center justify-center gap-1.5';
+            }
+          });
+
+          card.classList.add('active-tier', 'ring-2', 'ring-primary', '-translate-y-1');
+          const tier = card.dataset.tier;
+          const activeBtn = card.querySelector('.btn-select-tier');
+          if (activeBtn) {
+            activeBtn.innerHTML = `<span>Pilih Level ${tier} (Aktif)</span><span class="material-symbols-outlined text-[18px]">check_circle</span>`;
+            activeBtn.className = 'btn-select-tier w-full py-3 rounded-xl bg-primary text-on-primary font-label-md text-label-md shadow-[0_4px_0_#005137] transition-all flex items-center justify-center gap-1.5';
+          }
+
+          if (tokenLevelText && tierNames[tier]) {
+            tokenLevelText.textContent = `Level Terpilih: ${tierNames[tier]}`;
+          }
+        });
+      });
+
+      // Player Count Buttons
+      const playerBtns = document.querySelectorAll('.player-btn');
+      playerBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          playerBtns.forEach(b => {
+            b.classList.remove('active-btn', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_#005137]');
+            b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          btn.classList.add('active-btn', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_#005137]');
+          btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        });
+      });
+
+      // Mode Buttons
+      const modeBtns = document.querySelectorAll('.mode-btn');
+      modeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          modeBtns.forEach(b => {
+            b.classList.remove('active-btn', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_#005137]');
+            b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          });
+          btn.classList.add('active-btn', 'bg-primary', 'text-on-primary', 'shadow-[0_2px_0_#005137]');
+          btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        });
+      });
+
+      // Quotes Cycle
+      const quotes = [
+        { text: "Integritas adalah melakukan hal yang benar, bahkan ketika tidak ada seorang pun yang sedang melihatmu.", author: "C.S. Lewis" },
+        { text: "Kejujuran adalah bab pertama dalam buku kebijaksanaan.", author: "Thomas Jefferson" },
+        { text: "Berani jujur itu hebat! Karakter yang teguh lahir dari pilihan-pilihan kecil setiap hari.", author: "KPK RI • Nilai Antikorupsi" },
+        { text: "Keadilan dan tanggung jawab adalah jangkar bagi perahu masa depan bangsa.", author: "Kumbara @wea_aew" }
+      ];
+      let quoteIdx = 0;
+      const quoteTextEl = document.querySelector('blockquote');
+      const quoteAuthorEl = document.querySelector('blockquote + span');
+      const btnNextQuote = document.getElementById('btn-next-quote');
+
+      if (btnNextQuote && quoteTextEl && quoteAuthorEl) {
+        btnNextQuote.addEventListener('click', () => {
+          quoteIdx = (quoteIdx + 1) % quotes.length;
+          quoteTextEl.textContent = `“${quotes[quoteIdx].text}”`;
+          quoteAuthorEl.textContent = `${quotes[quoteIdx].author} • Ditanamkan dalam Petualangan Kumbara Karya @wea_aew`;
+        });
+      }
+
+      // Guide Modal toggles
+      const modal = document.getElementById('guide-modal');
+      const btnOpenGuide = document.getElementById('btn-guide-modal');
+      const btnCloseModal = document.getElementById('btn-close-modal');
+      const btnUnderstood = document.getElementById('btn-understood');
+
+      function openModal() {
+        if (!modal) return;
+        modal.classList.remove('hidden');
+        setTimeout(() => modal.classList.remove('opacity-0'), 10);
+      }
+
+      function closeModal() {
+        if (!modal) return;
+        modal.classList.add('opacity-0');
+        setTimeout(() => modal.classList.add('hidden'), 250);
+      }
+
+      if (btnOpenGuide) btnOpenGuide.addEventListener('click', openModal);
+      if (btnCloseModal) btnCloseModal.addEventListener('click', closeModal);
+      if (btnUnderstood) btnUnderstood.addEventListener('click', closeModal);
+
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) closeModal();
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="max-w-7xl mx-auto px-margin md:px-margin-desktop flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex flex-col items-center md:items-start"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary font-extrabold">KUMBARA</span><span class="font-label-sm text-label-sm text-on-surface-variant">| Media Pembelajaran Karakter &amp; Antikorupsi</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left mt-1">Menanamkan 9 Nilai Integritas: Jujur, Tanggung Jawab, Disiplin, Mandiri, Kerja Keras, Sederhana, Berani, Peduli, dan Adil.</p></div><div class="flex items-center gap-space-md"><span class="px-3 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">Karya @wea_aew</span><span class="font-label-sm text-label-sm text-on-surface-variant">© 2025 KUMBARA. Hak Cipta Dilindungi.</span></div></div></footer></body></html>
